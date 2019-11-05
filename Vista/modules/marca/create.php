@@ -80,8 +80,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Marca</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese la Marca" id="Nombre_Marca" name="Nombre_Marca" size="11" minlength="6" maxlength="400" required>
+                                    <label>Item</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese la Marca" id="Nombre_Marca" name="Nombre_Marca"  required>
                                 </div>
 
 

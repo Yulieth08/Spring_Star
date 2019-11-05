@@ -26,8 +26,9 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../modules/persona/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="../modules/persona/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/persona/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/persona/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+
                 </ul>
             </li>
 
@@ -39,8 +40,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../modules/marca/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="../modules/marca/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
                 </ul>
             </li>
 
@@ -55,8 +56,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../index.html"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="../index2.html"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
                 </ul>
             </li>
 
@@ -68,8 +69,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="../index.html"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="../index2.html"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
                 </ul>
             </li>
 
