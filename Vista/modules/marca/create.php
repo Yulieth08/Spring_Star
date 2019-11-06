@@ -57,7 +57,7 @@
                 Insertar Datos Marca
             </h1>
             <ol class="breadcrumb">
-                <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Compumedica"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
             </ol>
         </section>
 
@@ -80,7 +80,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Item</label>
+                                    <label>Marca</label>
                                     <input class="form-control" type="text" placeholder="Ingrese la Marca" id="Nombre_Marca" name="Nombre_Marca"  required>
                                 </div>
 
@@ -125,3 +125,5 @@
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
+</body>
+</html>

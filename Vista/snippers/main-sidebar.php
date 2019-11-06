@@ -32,16 +32,19 @@
                 </ul>
             </li>
 
+
+            <ul class="sidebar-menu" data-widget="tree">
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-user"></i> <span>Marca</span>
                     <span class="pull-right-container">
-                        <i class="fas fa-code-branch"></i>
+                <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/marca/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/marca/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+
                 </ul>
             </li>
 
