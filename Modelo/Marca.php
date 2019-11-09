@@ -90,7 +90,7 @@ class Marca extends Conexion
 
     public    static function getAll()
     {
-        return Marca::buscar("SELECT * FROM Marca");
+        return Marca::buscar("SELECT * FROM marca");
     }
 
     public   function insertar()
@@ -107,7 +107,7 @@ class Marca extends Conexion
     {
         $this->updateRow("UPDATE marca SET  Nombre_Marca = ? WHERE Id_Marca = ?", array(
             $this->Nombre_Marca,
-            $this->Id_Marca,
+            $this->Id_Marca
         ));
         $this->Disconnect();
     }

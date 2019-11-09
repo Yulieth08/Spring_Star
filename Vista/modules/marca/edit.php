@@ -89,18 +89,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nombre Marca</label>
-                                        <input id="IdMarca" value="<?php echo $DataMarca->getIdMarca(); ?>"
-                                               name="IdMarca" hidden required type="text">
+                                        <input id="Id_Marca" value="<?php echo $DataMarca->getIdMarca(); ?>"
+                                               name="Id_Marca" hidden required type="text">
 
-                                        <input class="form-control" value="<?php echo $DataMarca->getNombreMarca() ?>"
+                                        <input class="form-control" value="<?php echo $DataMarca->getNombreMarca() ;?>"
                                                type="text" placeholder="Ingrese la Marca" id="Nombre_Marca" name="Nombre_Marca"
                                                required>
-
-
-
                                     </div>
-
-
                                     <!-- /.form-group -->
                                 </div>
                                 <!-- /.col -->
@@ -114,14 +109,17 @@
                             </div>
                         </div>
                     </form>
+
+
                 <?php } else { ?>
                     <?php if (empty($_GET["respuesta"])) { ?>
                         <div class="alert alert-danger alert-dismissible fade in" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                                    aria-hidden="true">×</span>
+                                        aria-hidden="true">×</span>
                             </button>
                             <strong>Error!</strong> No se encontro ninguna persona con el parametro de busqueda.
                         </div>
+
                     <?php } ?>
                 <?php } ?>
 
