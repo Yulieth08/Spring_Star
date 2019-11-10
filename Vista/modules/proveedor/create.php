@@ -53,7 +53,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar datos persona
+                Insertar datos proveedor
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -77,55 +77,36 @@
                     </div>
                 </div>
 
-                <form method="post" action="../../../Controlador/PersonaController.php?action=crear">
+                <form method="post" action="../../../Controlador/ProveedorController.php?action=crear">
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-6">
 
                                 <!-- /.form-group -->
                                 <div class="form-group">
-                                    <label>Nombre</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Nombre" id="Nombre_persona" name="Nombre_persona" maxlength="45" required>
+                                    <label>NIT</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Nit" id="Nit_proveedor" name="Nit_proveedor">
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Apellido</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona" maxlength="45" required>
+                                    <label>Nombre proveedor</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Nombre" id="Nombre_proveedor" name="Nombre_proveedor" maxlength="45" required>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Tipo Documento </label>
-                                    <input class="form-control" type="number" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" maxlength="20" size="20" required>
-                                </div>
 
-                                <div class="form-group">
-                                    <label>Documento</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
-                                </div>
                                 <!-- /.form-group -->
                             </div>
                             <!-- /.col -->
                             <div class="col-md-6">
 
-
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input class="form-control" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
+                                    <label>Telefono Proveedor </label>
+                                    <input class="form-control" type="number" placeholder="Telefono proveedor" id="Telefono_proveedor" name="Telefono_proveedor" maxlength="20" size="20" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Rol</label>
-                                    <select class="form-control" name="Rol" id="Rol" required>
-                                        <option value="Administrador">Administrador</option>
-                                        <option value="Vendedor">Vendedor</option>
-                                        <option value="Cliente">Cliente</option>
-
-                                    </select>
+                                    <label>Direccion proveedor</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Direccion" id="Direccion_Proveedor" name="Direccion_Proveedor" maxlength="35" required>
                                 </div>
 
 
@@ -174,3 +155,5 @@
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
+</body>
+</html>

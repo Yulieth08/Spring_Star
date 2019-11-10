@@ -95,7 +95,7 @@
 
                                 <div class="form-group">
                                     <label>Tipo Documento </label>
-                                    <input class="form-control" type="number" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" maxlength="20" size="20" required>
+                                    <input class="form-control" type="text" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" maxlength="20" size="20" required>
                                 </div>
 
                                 <div class="form-group">

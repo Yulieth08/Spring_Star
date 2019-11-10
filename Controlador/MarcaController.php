@@ -10,7 +10,6 @@ use Zend\Hydrator\ReflectionHydrator; //Requerido para convertir un objeto en Ar
 if(!empty($_GET['action'])){
     MarcaController::main($_GET['action']);
 }else{
-    echo "No se encontro ninguna accion...";
 }
 class Marcacontroller
 {
@@ -28,62 +27,60 @@ class Marcacontroller
     }
 
     static public function crear()
-{
+    {
 
-    try {
-        $arrayMarca = array();
-        $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
-        $Marca = new Marca($arrayMarca);
-        if ($Marca->insertar()) {
-            header("Location: ../Vista/index.php");
-        } else {
-            echo "Error al insertar";
+        try {
+            $arrayMarca = array();
+            $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
+            $Marca = new Marca($arrayMarca);
+            if ($Marca->insertar()) {
+                header("Location: ../Vista/modules/marca/manager.php");
+            } else {
+                echo "Error al insertar";
 
+            }
+        } catch (Exception $e) {
+            var_dump($e);
+            //header("Location: ");
         }
-    } catch (Exception $e) {
-        var_dump($e);
-        //header("Location: ");
     }
-}
 
 
     public static function MarcaIsArray($IdMarca, $ArrayMarca)
-{
-    if (count($ArrayMarca) > 0) {
-        foreach ($ArrayMarca as $Marca) {
-            if ($Marca->getIdMarca() == $IdMarca) {
-                return true;
+    {
+        if (count($ArrayMarca) > 0) {
+            foreach ($ArrayMarca as $Marca) {
+                if ($Marca->getIdMarca() == $IdMarca) {
+                    return true;
+                }
             }
         }
+        return false;
     }
-    return false;
-}
 
     static public function editar()
-{
-    try {
-        $arrayMarca = array();
-        $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
-        $arrayMarca['IdMarca'] = $_POST['IdMarca'];
-
-        $Marca = new Marca($arrayMarca);
-        $Marca->editar();
-
-       header("Location: ../Vista/modules/manager.php");
-    } catch (Exception $e) {
-        var_dump($e);
+    {
+        try {
+            $arrayMarca = array();
+            $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
+            $arrayMarca['Id_Marca'] = $_POST['Id_Marca'];
+            $Marca = new Marca ($arrayMarca);
+            $Marca->editar();
+            header("Location: ../Vista/modules/marca/view.php?id=".$Marca->getIdMarca()."");
+        } catch (Exception $e) {
+            var_dump($e);
+        }
     }
-}
 
     static public function buscarID($id)
-{
-    try {
+    {
+        try {
 
-        return Marca::buscarforId($id);
-    } catch (Exception $e) {
-        header("Location: ../Vista/modules/Marca/manager.php?respuesta=error");
+            return Marca::buscarforId($id);
+        } catch (Exception $e) {
+            header("Location: ../Vista/modules/marca/manager.php?respuesta=error");
+        }
     }
-}
 
 
 

@@ -75,6 +75,7 @@
                     </div>
                 </div>
                 <!-- /.box-header -->
+
                 <form method="post" action="../../../Controlador/MarcaController.php?action=crear">
                     <div class="box-body">
                         <div class="row">
