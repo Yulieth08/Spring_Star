@@ -1,3 +1,4 @@
+CONTROLADOR
 <?php
 if(session_status() == PHP_SESSION_NONE){ //Si la session no ha iniciado
     session_start();
@@ -84,4 +85,9 @@ class Marcacontroller
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> origin/master

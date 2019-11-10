@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="casfcadasffasfdfdf">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/Conexion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/Marca.php" afterDir="false" />
+    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controlador/ProveedorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelo/proveedor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/MarcaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Marca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Marca.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +62,13 @@
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="marca: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="proveedor: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -78,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modelo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CompuMedica" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,12 +124,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@831cd1c6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -140,7 +145,10 @@
       <workItem from="1572441797109" duration="4490000" />
       <workItem from="1572452960577" duration="5003000" />
       <workItem from="1572985086790" duration="10265000" />
-      <workItem from="1573046858389" duration="315000" />
+      <workItem from="1573046858389" duration="1890000" />
+      <workItem from="1573048781410" duration="21159000" />
+      <workItem from="1573086932657" duration="7438000" />
+      <workItem from="1573157337640" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -163,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572987066989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ollp.o">
+      <created>1573047199766</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573047199766</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +200,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="casfcadasffas" />
     <MESSAGE value="casfcadasffasfdfdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="casfcadasffasfdfdf" />
+    <MESSAGE value="ollp.o" />
+    <option name="LAST_COMMIT_MESSAGE" value="ollp.o" />
   </component>
 </project>

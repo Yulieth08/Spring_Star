@@ -1,3 +1,5 @@
+MANAGER
+
 <?php require ("../../../Modelo/Marca.php")?>
 
 
