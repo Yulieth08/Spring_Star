@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controlador/ProveedorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/proveedor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/MarcaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelo/Marca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Marca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,6 +138,8 @@
       <workItem from="1573048781410" duration="21159000" />
       <workItem from="1573086932657" duration="7438000" />
       <workItem from="1573157337640" duration="3461000" />
+      <workItem from="1573264689121" duration="1370000" />
+      <workItem from="1573510019555" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -178,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573047199766</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fdadaad">
+      <created>1573264792231</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573264792231</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +199,7 @@
     <MESSAGE value="casfcadasffas" />
     <MESSAGE value="casfcadasffasfdfdf" />
     <MESSAGE value="ollp.o" />
-    <option name="LAST_COMMIT_MESSAGE" value="ollp.o" />
+    <MESSAGE value="fdadaad" />
+    <option name="LAST_COMMIT_MESSAGE" value="fdadaad" />
   </component>
 </project>

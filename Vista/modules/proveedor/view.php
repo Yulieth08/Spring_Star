@@ -1,6 +1,5 @@
 <?php require ("../../../Modelo/Proveedor.php")?>
 <?php require ("../../../Controlador/ProveedorController.php") ?>
-:v
 <!DOCTYPE html>
 <html>
 <head>
