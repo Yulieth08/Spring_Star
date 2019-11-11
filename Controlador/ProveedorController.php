@@ -4,16 +4,12 @@ if(session_status() == PHP_SESSION_NONE){ //Si la session no ha iniciado
 }
 require (__DIR__.'/../vendor/autoload.php'); //Requerido para convertir un objeto en Array
 require_once (__DIR__.'/../Modelo/Proveedor.php');
-
 use Zend\Hydrator\ReflectionHydrator; //Requerido para convertir un objeto en Array
-
 if(!empty($_GET['action'])){
     ProveedorController::main($_GET['action']);
 }else{
     echo "No se encontro ninguna accion...";
 }
-
-
 class ProveedorController
 {
     static function main($action)
@@ -24,12 +20,10 @@ class ProveedorController
             ProveedorController::editar();
         } else if ($action == "buscarID") {
             ProveedorController::buscarID($_REQUEST['Id_Proveedor']);
-            }
+        }
     }
-
     static public function crear()
     {
-
         try {
             $arrayProve = array();
             $arrayProve['Nit_proveedor'] = $_POST['Nit_proveedor'];
@@ -46,9 +40,7 @@ class ProveedorController
             var_dump($e);
             header("Location: ../Vista/modules/proveedor/manager.php");
         }
-
     }
-
     public static function ProveIsArray($Id_Proveedor, $arrayProve){
         if (count($arrayProve) > 0) {
             foreach ($arrayProve as $Prove) {
@@ -59,30 +51,25 @@ class ProveedorController
         }
         return false;
     }
-
     static public  function editar(){
         try{
             $arrayProve = array();
             $arrayProve['Nit_proveedor'] = $_POST['Nit_proveedor'];
-            $arrayProve['Nombre_proveedor'] = $_POST['Nombre_proveedor'];
-            $arrayProve['Telefono_proveedor'] = $_POST['Telefono_proveedor'];
+            $arrayProve['Nombre_Proveedor'] = $_POST['Nombre_Proveedor'];
+            $arrayProve['Telefono_Proveedor'] = $_POST['Telefono_Proveedor'];
             $arrayProve['Direccion_Proveedor'] = $_POST['Direccion_Proveedor'];
             $Prove = new Proveedor($arrayProve);
             $Prove->editar();
-            header("Location: ../Vista/modules/Proveedor/view.php?id=".$Prove->getId_Proveedor()."");
+            header("Location: ../Vista/modules/proveedor/view.php?id=".$Prove->getIdProveedor()."");
         }catch (Exception $e){
             var_dump($e);
         }
     }
-
     static public function buscarID ($id){
         try {
-
             return Proveedor::buscarForId($id);
         } catch (Exception $e) {
-            header("Location: ../Vista/modules/Proveedor/manager.php?respuesta=error");
+            header("Location: ../Vista/modules/proveedor/manager.php?respuesta=error");
         }
     }
-
-    }
-
+}

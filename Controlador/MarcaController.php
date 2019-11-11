@@ -85,5 +85,9 @@ class Marcacontroller
 
 
 
+<<<<<<< HEAD
+}
+=======
 }
 
+>>>>>>> origin/master

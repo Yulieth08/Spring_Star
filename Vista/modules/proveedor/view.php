@@ -35,12 +35,8 @@
 <!-- Site wrapper -->
 <div class="wrapper">
     <?php require_once "../../snippers/menuSuperior.php"?>
-
     <!-- =============================================== -->
     <?php require_once "../../snippers/MenuIzquierdo.php"?>
-
-
-
     <!-- Contenido de la pagina-->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -72,7 +68,6 @@
                 <?php if(!empty($_GET["id"]) && isset($_GET["id"])){ ?>
                     <?php
                     $DataProve = ProveedorController::buscarID($_GET["id"]);
-
                     ?>
 
                     <table class="table table-hover ">
@@ -149,6 +144,4 @@
 <!-- AdminLTE for demo purposes -->
 </body>
 </html>
-
-
 

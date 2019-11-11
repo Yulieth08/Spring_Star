@@ -1,4 +1,3 @@
-
 <?php require ("../../../Modelo/Marca.php")?>
 <?php require("../../../Controlador/MarcaController.php") ?>
 <!DOCTYPE html>
@@ -137,6 +136,3 @@
     <!-- AdminLTE for demo purposes -->
 </body>
 </html>
-
-
-

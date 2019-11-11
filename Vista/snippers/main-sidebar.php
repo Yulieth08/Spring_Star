@@ -33,11 +33,10 @@
             </li>
 
 
-            <ul class="sidebar-menu" data-widget="tree">
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-user"></i> <span>Marca</span>
-                    <span class="pull-right-container">
+                    <i class="fa fa-barcode"></i> <span>Marca</span>
+                    <span class="pull-righ-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
@@ -50,37 +49,38 @@
 
 
 
-
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Producto</span>
+                    <i class="fa fa-tags"></i> <span>Producto</span>
                     <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
-                </ul>
-            </li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/producto/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/producto/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Proveedor</span>
-                    <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><i class="fa fa-circle-o"></i> Administrar</a></li>
                 </ul>
             </li>
 
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-share"></i> <span>Facturas</span>
+                    <i class="fa fa-user"></i> <span>Proveedor</span>
+                    <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/proveedor/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/proveedor/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-cart-arrow-down"></i> <span>Facturas</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

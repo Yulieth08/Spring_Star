@@ -76,7 +76,6 @@
                 if (!empty($_GET["id"]) && isset($_GET["id"])) { ?>
                 <?php
                 $DataProve = ProveedorController::buscarID($_GET["id"]);
-                var_dump($DataProve);
                 ?>
 
                 <form method="post" action="../../../Controlador/ProveedorController.php?action=editar">
