@@ -84,13 +84,13 @@
 
                                 <!-- /.form-group -->
                                 <div class="form-group">
-                                    <label>NIT</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Nit" id="Nit_proveedor" name="Nit_proveedor">
+                                    <label>Nit</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Nit" id="Nit_Proveedor" name="Nit_Proveedor">
                                 </div>
 
                                 <div class="form-group">
                                     <label>Nombre proveedor</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Nombre" id="Nombre_proveedor" name="Nombre_proveedor" maxlength="45" required>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Nombre" id="Nombre_Proveedor" name="Nombre_Proveedor" maxlength="45" required>
                                 </div>
 
 
@@ -101,7 +101,7 @@
 
                                 <div class="form-group">
                                     <label>Telefono Proveedor </label>
-                                    <input class="form-control" type="number" placeholder="Telefono proveedor" id="Telefono_proveedor" name="Telefono_proveedor" maxlength="20" size="20" required>
+                                    <input class="form-control" type="number" placeholder="Telefono proveedor" id="Telefono_Proveedor" name="Telefono_Proveedor" maxlength="20" size="20" required>
                                 </div>
 
                                 <div class="form-group">

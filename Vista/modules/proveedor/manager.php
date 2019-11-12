@@ -57,7 +57,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                 Datos Proveedor
+                Insertar Datos Proveedor
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -83,35 +83,32 @@
                             <th>Nit proveedor</th>
                             <th>Nombre proveedor</th>
                             <th>Telefono proveedor</th>
-                            <th>Direccion Proveedor
+                            <th>Direccion Proveedor</th>
                             <th>Estado</th>
-                            <th>Acciones
-
+                            <th>Acciones</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php
-                        $arrProve = Proveedor::getAll();
-                        foreach ($arrProve as $Prove){
+                        $arrayProveedor = Proveedor::getAll();
+
+                        foreach ($arrayProveedor as $Proveedor){
                             ?>
                             <tr>
-                                <td><?php echo $Prove->getNitproveedor(); ?></td>
-                                <td><?php echo $Prove->getNombreproveedor(); ?></td>
-                                <td><?php echo $Prove->getTelefonoproveedor(); ?></td>
-                                <td><?php echo $Prove->getDireccionProveedor(); ?></td>
-                                <td><?php echo $Prove->getEstado();?></td>
-
-
+                                <td><?php echo $Proveedor->getNitProveedor(); ?></td>
+                                <td><?php echo $Proveedor->getNombreProveedor(); ?></td>
+                                <td><?php echo $Proveedor->getTelefonoProveedor(); ?></td>
+                                <td><?php echo $Proveedor->getDireccionProveedor(); ?></td>
+                                <td><?php echo $Proveedor->getEstado();?></td>
                                 <td>
-                                    <a href="edit.php?id=<?php echo $Prove->getIdProveedor(); ?>" type="button" data-toggle="tooltip" title="Actualizar" class="btn docs-tooltip btn-primary btn-xs"><i class="fa fa-edit"></i></a>
-                                    <a href="view.php?id=<?php echo $Prove->getIdProveedor(); ?>" type="button" data-toggle="tooltip" title="Ver" class="btn docs-tooltip btn-warning btn-xs"><i class="fa fa-eye"></i></a>
-                                    <?php if ($Prove->getEstado() != "Activo"){ ?>
-                                    <a href="../../../Controlador/PersonaController.php?action=ActivarPersona&Id_persona=<?php echo $persona->getIdPersona(); ?>" type="button" data-toggle="tooltip" title="Activar" class="btn docs-tooltip btn-dark btn-xs"><i class="fa fa-check-square-o"></i></a>
+                                    <a href="edit.php?id=<?php echo $Proveedor->getIdProveedor(); ?>" type="button" data-toggle="tooltip" title="Actualizar" class="btn docs-tooltip btn-primary btn-xs"><i class="fa fa-edit"></i></a>
+                                    <a href="view.php?id=<?php echo $Proveedor->getIdProveedor(); ?>" type="button" data-toggle="tooltip" title="Ver" class="btn docs-tooltip btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+                                    <?php if ($Proveedor->getEstado() != "Activo"){ ?>
+
+                                        <a href="../../../Controlador/ProveedorController.php?action=ActivarProveedor&Id_Proveedor=<?php echo $Proveedor->getIdProveedor(); ?>" type="button" data-toggle="tooltip" title="Activar" class="btn docs-tooltip btn-dark btn-xs"><i class="fa fa-check-square-o"></i></a>
                                     <?php }else{ ?>
-                                    <a type="button" href="../../../Controlador/PersonaController.php?action=InactivarPersona&Id_persona=<?php echo $persona->getIdPersona(); ?>" data-toggle="tooltip" title="Inactivar" class="btn docs-tooltip btn-danger btn-xs"><i class="fa fa-times-circle-o"></i></a>
+                                        <a type="button" href="../../../Controlador/ProveedorController.php?action=InactivarProveedor&Id_Proveedor=<?php echo $Proveedor->getIdProveedor(); ?>" data-toggle="tooltip" title="Inactivar" class="btn docs-tooltip btn-danger btn-xs"><i class="fa fa-times-circle-o"></i></a>
                                     <?php } ?>
-
-
                                 </td>
                             </tr>
                         <?php } ?>

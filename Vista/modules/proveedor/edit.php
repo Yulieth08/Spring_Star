@@ -32,6 +32,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
+
+
+
+
+
 <body class="hold-transition skin-green sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
@@ -45,104 +50,106 @@
     <!-- =============================================== -->
 
     <!-- Content Wrapper. Contains page content -->
-    <!-- Contenido de la pagina-->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Editar Datos Proveedor
-            </h1>
+                Editar Datos Persona            </h1>
             <ol class="breadcrumb">
-                <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
             </ol>
         </section>
 
         <!-- Main content -->
         <section class="content">
 
-            <!-- SELECT2 EXAMPLE -->
-            <div class="box box-default">
+            <!-- Default box -->
+            <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Proveedor</h3>
+                    <h3 class="box-title">Persona</h3>
 
                     <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                                title="Collapse">
+                            <i class="fa fa-minus"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                            <i class="fa fa-times"></i></button>
                     </div>
                 </div>
-                <!-- /.box-header -->
 
                 <?php
                 if (!empty($_GET["id"]) && isset($_GET["id"])) { ?>
-                <?php
-                $DataProve = ProveedorController::buscarID($_GET["id"]);
-                ?>
+                    <?php
+                    $Prove_data = ProveedorController::buscarID($_GET["id"]);
+                    ?>
 
-                <form method="post" action="../../../Controlador/ProveedorController.php?action=editar">
-                    <div class="box-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label> Proveedor</label>
-                                    <input id="Id_proveedor" value="<?php echo $DataProve->getIdproveedor();?>"
-                                           name="Id_proveedor" hidden required type="text">
-                                    <input class="form-control" type="text" value="<?php echo $DataProve->getIdproveedor();?>" placeholder="Ingrese el Nit " id="Id_proveedor" name="Id_proveedor"  required>
-                                </div>
-                                <div class="form-group">
-                                    <label>NIT</label>
-                                    <input class="form-control" type="number" value="<?php echo $DataProve->getNitproveedor();?>" placeholder="Ingrese el Nombre" id="Nit_proveedor" name="Nit_proveedor"required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Nombre</label>
-                                    <input class="form-control" type="number" value="<?php echo $DataProve->getNombreproveedor();?>" placeholder="Ingrese el Nombre" id="Nombre_Proveedor" name="Nombre_Proveedor"required>
-                                </div>
 
-                                <div class="form-group">
-                                    <label>Telefono</label>
-                                    <input class="form-control" type="text" value="<?php echo $DataProve->getTelefonoproveedor();?>" placeholder="Ingrese El Telefono" id="Telefono_Proveedor" name="Telefono_Proveedor"required>
-                                </div>
+                    <form method="post" action="../../../Controlador/ProveedorController.php?action=editar">
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-6">
 
-                                <div class="form-group">
-                                    <label>Direccion</label>
-                                    <input class="form-control" type="text" value="<?php echo $DataProve->getDireccionProveedor();?>" placeholder="Ingresela Direccion" id="Direccion_Proveedor" name="Direccion_Proveedor"required>
+                                    <div class="form-group">
+                                        <label>NIT</label>
+                                        <input id="Id_Proveedor" value="<?php echo $Prove_data->getIdProveedor(); ?>" name="Id_Proveedor" hidden required type="text">
+                                        <input class="form-control" type="text" value="<?php echo $Prove_data->getNitProveedor();?>" placeholder="Ingrese el Nombre" id="Nit_Proveedor" name="Nit_Proveedor"required>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input class="form-control" type="text" value="<?php echo $Prove_data->getNombreProveedor();?>" placeholder="Ingrese el Nombre" id="Nombre_Proveedor" name="Nombre_Proveedor"required>                                    </div>
+
+                                                                     <!-- /.form-group -->
                                 </div>
+                                <!-- /.col -->
+                                <div class="col-md-6">
+
+
+
+                                    <div class="form-group">
+                                        <label>Telefono</label>
+                                        <input class="form-control" type="text" value="<?php echo $Prove_data->getTelefonoProveedor();?>" placeholder="Ingrese El Telefono" id="Telefono_Proveedor" name="Telefono_Proveedor"required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Direccion</label>
+                                        <input class="form-control" type="text" value="<?php echo $Prove_data->getDireccionProveedor();?>" placeholder="Ingresela Direccion" id="Direccion_Proveedor" name="Direccion_Proveedor"required>
+
+                                    </div>
+
+
+                                    <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <div class="box-footer">
+                            <div class="box-footer">
+                                <button type="reset" class="btn btn-default">Cancelar</button>
+                                <button type="submit" class="btn btn-info pull-right">Enviar</button>
                             </div>
                         </div>
-                        <!-- /.row -->
-                    </div>
-                    <div class="box-footer">
-                        <div class="box-footer">
-                            <button type="reset" class="btn btn-default">Cancelar</button>
-                            <button type="submit" class="btn btn-info pull-right">Enviar</button>
+                    </form>
+                    <!-- /.box-body -->
+                <?php } else { ?>
+                    <?php if (empty($_GET["respuesta"])) { ?>
+                        <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                        aria-hidden="true">×</span>
+                            </button>
+                            <strong>Error!</strong> No se encontro ninguna persona con el parametro de busqueda.
                         </div>
-                    </div>
-                </form>
+                    <?php } ?>
+                <?php } ?>
 
+                <!-- /.box-footer-->
             </div>
-
+            <!-- /.box -->
     </div>
-
-
-    <!-- /.form-group -->
-</div>
-<!-- /.col -->
-</div>
-<!-- /.row -->
-
-</form>
-<?php } else { ?>
-    <?php if (empty($_GET["respuesta"])) { ?>
-        <div class="alert alert-danger alert-dismissible fade in" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">×</span>
-            </button>
-            <strong>Error!</strong> No se encontro ninguna persona con el parametro de busqueda.
-        </div>
-    <?php } ?>
-<?php } ?>
-
-</div>
-<!-- /.box -->
+    </section>
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 <?php include ('../../snippers/Fotter.php') ?>

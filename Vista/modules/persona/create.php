@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <form method="post" action="../../../Controlador/ProductoCotroller.php?action=crear">
+                <form method="post" action="../../../Controlador/PersonaController.php?action=crear">
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-6">

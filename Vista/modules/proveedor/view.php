@@ -1,5 +1,5 @@
 <?php require ("../../../Modelo/Proveedor.php")?>
-<?php require ("../../../Controlador/ProveedorController.php") ?>
+<?php require("../../../Controlador/ProveedorController.php") ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="../../../vendor/almasaeed2010/adminlte/dist/css/skins/_all-skins.min.css">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,18 +32,26 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+
+<body class="hold-transition skin-green sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
-    <?php require_once "../../snippers/menuSuperior.php"?>
+
+    <?php include ('../../snippers/header.php') ?>
     <!-- =============================================== -->
-    <?php require_once "../../snippers/MenuIzquierdo.php"?>
+
+    <!-- Left side column. contains the sidebar -->
+    <?php include ('../../snippers/main-sidebar.php') ?>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
     <!-- Contenido de la pagina-->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Datos Proveedor
+                Insertar Datos Proveedor
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -55,19 +64,19 @@
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title"> Proveedor</h3>
+                    <h3 class="box-title">proveedor</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
                     </div>
                 </div>
+                <!-- /.box-header -->
 
-                <!-- /.box-body -->
-
-                <?php if(!empty($_GET["id"]) && isset($_GET["id"])){ ?>
+                <?php
+                if (!empty($_GET["id"]) && isset($_GET["id"])) { ?>
                     <?php
-                    $DataProve = ProveedorController::buscarID($_GET["id"]);
+                    $prove_data = ProveedorController::buscarID($_GET["id"]);
                     ?>
 
                     <table class="table table-hover ">
@@ -79,69 +88,66 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Proveedor: </td>
-                            <td><?= $DataProve->getNitproveedor(); ?></td>
+                            <td>Nit: </td>
+                            <td><?= $prove_data->getNitProveedor(); ?></td>
                         </tr>
                         <tr>
-                            <td>Telefono: </td>
-                            <td><?= $DataProve->getNombreproveedor(); ?></td>
+                            <td>Nombre: </td>
+                            <td><?= $prove_data->getNombreProveedor(); ?></td>
                         </tr>
                         <tr>
-                            <td>Correo: </td>
-                            <td><?= $DataProve->getTelefonoproveedor(); ?></td>
+                            <td>Tipo Documento: </td>
+                            <td><?= $prove_data->getTelefonoProveedor(); ?></td>
                         </tr>
                         <tr>
-                            <td>Ubicacion: </td>
-                            <td><?= $DataProve->getDireccionProveedor(); ?></td>
+                            <td>Documento: </td>
+                            <td><?= $prove_data->getDireccionProveedor(); ?></td>
                         </tr>
+                        <tr>
+                            <td>Estado: </td>
+                            <td><?= $prove_data->getEstado(); ?></td>
+                        </tr>
+
 
                         </tbody>
                     </table>
-
-
 
                 <?php }else{ ?>
                     <div class="alert alert-danger alert-dismissible fade in" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
                         </button>
-                        <strong>Error!</strong> No se encontro ninguna viaje con el parametro de busqueda.
+                        <strong>Error!</strong> No se encontro ninguna persona con el parametro de busqueda.
                     </div>
                 <?php } ?>
                 <div class="ln_solid"></div>
                 <div class="form-group">
                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                        <a href="manager.php" class="btn btn-danger" >Volver</a>
-                        <a href="edit.php?id=<?php echo $DataProve->getIdproveedor();?>" class="btn btn-success">Editar</a>
+                        <a href="manager.php" class="btn btn-primary" >Volver</a>
+                        <a href="edit.php?id=<?= $_GET["id"] ?>" class="btn btn-success">Editar</a>
                     </div>
                 </div>
             </div>
+
+            <!-- /.box -->
     </div>
-    <!-- /.box -->
-</div>
+    <!-- /.content-wrapper -->
+    <?php include ('../../snippers/Fotter.php') ?>
 
+    <!-- Control Sidebar -->
+    <?php include ('../../snippers/control_sidebar.php') ?>
 
-</div>
-<!-- ./wrapper -->
-<!-- /.content-wrapper -->
-<?php include ('../../snippers/Fotter.php') ?>
+    <!-- ./wrapper -->
 
-<!-- Control Sidebar -->
-<?php include ('../../snippers/control_sidebar.php') ?>
-
-<!-- ./wrapper -->
-<!-- ./wrapper -->
-
-<!-- jQuery 3 -->
-<script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../../../vendor/almasaeed2010/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../../../vendor/almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
+    <!-- jQuery 3 -->
+    <script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../../../vendor/almasaeed2010/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="../../../vendor/almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
 </body>
 </html>
-
