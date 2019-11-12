@@ -10,7 +10,6 @@ use Zend\Hydrator\ReflectionHydrator; //Requerido para convertir un objeto en Ar
 if(!empty($_GET['action'])){
     ProveedorController::main($_GET['action']);
 }else{
-    echo "No se encontro ninguna accion...";
 }
 
 

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controlador/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProveedorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelo/proveedor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Proveedor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +144,7 @@
       <workItem from="1573157337640" duration="3461000" />
       <workItem from="1573264689121" duration="1370000" />
       <workItem from="1573510019555" duration="18000" />
-      <workItem from="1573564486151" duration="20856000" />
+      <workItem from="1573564486151" duration="21200000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -197,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573578776674</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modulo Proveedor">
+      <created>1573590557274</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573590557274</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +222,7 @@
     <MESSAGE value="ollp.o" />
     <MESSAGE value="fdadaad" />
     <MESSAGE value="* Modulo de Marca, Producto y Persona" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Modulo de Marca, Producto y Persona" />
+    <MESSAGE value="Modulo Proveedor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo Proveedor" />
   </component>
 </project>
