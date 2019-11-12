@@ -1,25 +1,13 @@
 <?php
 require ('Conexion.php');
 class Proveedor extends Conexion{
-    private $Id_proveedor;
-    private $Nit_proveedor;
+    private $Id_Proveedor;
+    private $Nit_Proveedor;
     private $Nombre_Proveedor;
     private $Telefono_Proveedor;
     private $Direccion_Proveedor;
-    /**
-     * @return bool
-     */
-    public function isConnected()
-    {
-        return $this->isConnected;
-    }
-    /**
-     * @param bool $isConnected
-     */
-    public function setIsConnected($isConnected)
-    {
-        $this->isConnected = $isConnected;
-    }
+    private $Estado;
+
     /**
      * @return string
      */
@@ -27,6 +15,7 @@ class Proveedor extends Conexion{
     {
         return $this->Id_proveedor;
     }
+
     /**
      * @param string $Id_proveedor
      */
@@ -34,6 +23,7 @@ class Proveedor extends Conexion{
     {
         $this->Id_proveedor = $Id_proveedor;
     }
+
     /**
      * @return string
      */
@@ -41,6 +31,7 @@ class Proveedor extends Conexion{
     {
         return $this->Nit_proveedor;
     }
+
     /**
      * @param string $Nit_proveedor
      */
@@ -48,6 +39,7 @@ class Proveedor extends Conexion{
     {
         $this->Nit_proveedor = $Nit_proveedor;
     }
+
     /**
      * @return string
      */
@@ -55,6 +47,7 @@ class Proveedor extends Conexion{
     {
         return $this->Nombre_Proveedor;
     }
+
     /**
      * @param string $Nombre_Proveedor
      */
@@ -62,6 +55,7 @@ class Proveedor extends Conexion{
     {
         $this->Nombre_Proveedor = $Nombre_Proveedor;
     }
+
     /**
      * @return string
      */
@@ -69,6 +63,7 @@ class Proveedor extends Conexion{
     {
         return $this->Telefono_Proveedor;
     }
+
     /**
      * @param string $Telefono_Proveedor
      */
@@ -76,6 +71,7 @@ class Proveedor extends Conexion{
     {
         $this->Telefono_Proveedor = $Telefono_Proveedor;
     }
+
     /**
      * @return string
      */
@@ -83,6 +79,7 @@ class Proveedor extends Conexion{
     {
         return $this->Direccion_Proveedor;
     }
+
     /**
      * @param string $Direccion_Proveedor
      */
@@ -90,6 +87,35 @@ class Proveedor extends Conexion{
     {
         $this->Direccion_Proveedor = $Direccion_Proveedor;
     }
+
+    /**
+     * @return string
+     */
+    public function getEstado()
+    {
+        return $this->Estado;
+    }
+
+    /**
+     * @param string $Estado
+     */
+    public function setEstado($Estado)
+    {
+        $this->Estado = $Estado;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function __construct($Prove_data = array())
     {
         parent::__construct();
@@ -98,11 +124,12 @@ class Proveedor extends Conexion{
                 $this->$campo = $valor;
             }
         } else {
-            $this->Id_proveedor = "";
-            $this->Nit_proveedor = "";
+            $this-> Id_Proveedor= "";
+            $this->Nit_Proveedor = "";
             $this->Nombre_Proveedor = "";
             $this->Telefono_Proveedor = "";
             $this->Direccion_Proveedor = "";
+            $this->Estado = "";
         }
     }
     public static function buscarForId($id)
@@ -111,12 +138,13 @@ class Proveedor extends Conexion{
         if ($id > 0){
             $getrow = $Prove->getRow("SELECT * FROM proveedor WHERE Id_Proveedor = ?", array($id));
             $Prove->Id_proveedor = $getrow['Id_proveedor'];
-            $Prove->Nit_proveedor = $getrow['Nit_proveedor'];
+            $Prove->Nit_Proveedor = $getrow['Nit_Proveedor'];
             $Prove->Nombre_Proveedor = $getrow['Nombre_Proveedor'];
             $Prove->Telefono_Proveedor = $getrow['Telefono_Proveedor'];
             $Prove->Direccion_Proveedor = $getrow['Direccion_Proveedor'];
-            var_dump($Prove);
-            die();
+            $Prove->Estado = $getrow['Estado'];
+
+
         }
         return $Prove;
     }
@@ -128,10 +156,12 @@ class Proveedor extends Conexion{
         foreach ($getrows as $valor) {
             $Prove = new Proveedor();
             $Prove->Id_Proveedor = $valor['Id_proveedor'];
-            $Prove->Nit_proveedor = $valor['Nit_proveedor'];
+            $Prove->Nit_Proveedor = $valor['Nit_Proveedor'];
             $Prove->Nombre_Proveedor = $valor['Nombre_Proveedor'];
             $Prove->Telefono_Proveedor = $valor['Telefono_Proveedor'];
             $Prove->Direccion_Proveedor = $valor['Direccion_Proveedor'];
+            $Prove->Estado = $valor['Estado'];
+
             $Prove->Disconnect();
             array_push($arrProve, $Prove);
         }
@@ -144,22 +174,26 @@ class Proveedor extends Conexion{
     }
     public function insertar()
     {
-        $result = $this->insertRow("INSERT INTO proveedor VALUES (NULL, ?, ?, ?, ?)", array(
+        $result = $this->insertRow("INSERT INTO proveedor VALUES (NULL, ?, ?, ?, ?,?)", array(
             $this->Nit_proveedor,
             $this->Nombre_Proveedor,
             $this->Telefono_Proveedor,
             $this->Direccion_Proveedor,
+            $this->Estado,
+
         ));
         $this->Disconnect();
         return $result;
     }
     public function editar()
     {
-        $this->updateRow("UPDATE proveedor SET Nit_proveedor= ?, Nombre_proveedor= ?, Telefono_proveedor= ? ,D WHERE Id_Proveedor = ?", array(
+        $this->updateRow("UPDATE proveedor SET Nit_proveedor= ?, Nombre_proveedor= ?, Telefono_proveedor= ? ,Estado=? WHERE Id_Proveedor = ?", array(
             $this->Nit_proveedor,
             $this->Nombre_Proveedor,
             $this->Telefono_Proveedor,
             $this->Direccion_Proveedor,
+                        $this->Estado,
+
             $this->Id_proveedor
         ));
         $this->Disconnect();

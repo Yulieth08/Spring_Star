@@ -1,4 +1,4 @@
-MANAGER
+
 
 <?php require ("../../../Modelo/Marca.php")?>
 
@@ -59,7 +59,7 @@ MANAGER
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar Datos Marca
+                 Datos Marca
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Compumedica"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -95,11 +95,22 @@ MANAGER
                         foreach ($arrayMarca as $Marca){
                             ?>
                             <tr>
-                                <td><?php echo $Marca-> getNombreMarca(); ?></td>
+                                <td><?php echo $Marca-> getNombreMarca(); ?>
+                                <td><?php echo $Marca->getEstado();?></td>
+
 
                                 <td>
                                     <a href="edit.php?id=<?php echo $Marca->getIdMarca(); ?>" type="button" data-toggle="tooltip" title="Actualizar" class="btn docs-tooltip btn-primary btn-xs"><i class="fa fa-edit"></i></a>
                                     <a href="view.php?id=<?php echo $Marca->getIdMarca(); ?>" type="button" data-toggle="tooltip" title="Ver" class="btn docs-tooltip btn-warning btn-xs"><i class="fa fa-eye"></i></a>
+
+                                    <?php if ($Marca->getEstado() != "Activo"){ ?>
+                                        <a href="../../../Controlador/Marcacontroller.php?action=ActivarMarca&Id_Marca=<?php echo $Marca->getIdMarca(); ?>" type="button" data-toggle="tooltip" title="Activar" class="btn docs-tooltip btn-dark btn-xs"><i class="fa fa-check-square-o"></i></a>
+                                    <?php }else{ ?>
+                                        <a type="button" href="../../../Controlador/Marcacontroller.php?action=InactivarMarca&Id_Marca=<?php echo $Marca->getIdMarca(); ?>" data-toggle="tooltip" title="Inactivar" class="btn docs-tooltip btn-danger btn-xs"><i class="fa fa-times-circle-o"></i></a>
+                                    <?php } ?>
+
+
+
                                 </td>
                             </tr>
                         <?php } ?>

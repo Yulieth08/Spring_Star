@@ -8,7 +8,6 @@ use Zend\Hydrator\ReflectionHydrator; //Requerido para convertir un objeto en Ar
 if(!empty($_GET['action'])){
     ProveedorController::main($_GET['action']);
 }else{
-    echo "No se encontro ninguna accion...";
 }
 class ProveedorController
 {
@@ -20,7 +19,11 @@ class ProveedorController
             ProveedorController::editar();
         } else if ($action == "buscarID") {
             ProveedorController::buscarID($_REQUEST['Id_Proveedor']);
-        }
+            } else if ($action == "ActivarProducto") {
+            ProveedorController::ActivarProducto();
+    } else if ($action == "InactivarProducto") {
+            ProveedorController::InactivarProducto();
+}
     }
     static public function crear()
     {
@@ -30,6 +33,7 @@ class ProveedorController
             $arrayProve['Nombre_proveedor'] = $_POST['Nombre_proveedor'];
             $arrayProve['Telefono_proveedor'] = $_POST['Telefono_proveedor'];
             $arrayProve['Direccion_Proveedor'] = $_POST['Direccion_Proveedor'];
+            $arrayProve['Estado'] = 'Activo';
             $Prove = new Proveedor($arrayProve);
             if ($Prove->insertar()){
                 header("Location: ../Vista/modules/Proveedor/manager.php?respuesta=correcto");
@@ -58,6 +62,8 @@ class ProveedorController
             $arrayProve['Nombre_Proveedor'] = $_POST['Nombre_Proveedor'];
             $arrayProve['Telefono_Proveedor'] = $_POST['Telefono_Proveedor'];
             $arrayProve['Direccion_Proveedor'] = $_POST['Direccion_Proveedor'];
+            $arrayProve['Estado'] = "Activo";
+
             $Prove = new Proveedor($arrayProve);
             $Prove->editar();
             header("Location: ../Vista/modules/proveedor/view.php?id=".$Prove->getIdProveedor()."");

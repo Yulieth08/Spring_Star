@@ -54,8 +54,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar datos persona
-            </h1>
+Editar Datos Persona            </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
             </ol>
@@ -92,22 +91,24 @@
 
                                 <div class="form-group">
                                     <label>Nombre</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getNombrePersona()?>" type="text" placeholder="Ingrese su Nombre" id="Nombre_persona" name="Nombre_persona" maxlength="45" required>
+                                        <input id="Id_persona" value="<?php echo $persona_data->getIdPersona(); ?>" name="Id_persona" hidden required type="text">
+
+                                    <input class="form-control" value="<?php echo $persona_data->getNombrePersona()?>" type="text" placeholder="Ingrese su Nombre" id="Nombre_persona" name="Nombre_persona" >
                                 </div>
 
                                 <div class="form-group">
                                     <label>Apellido</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona" maxlength="45" required>
+                                    <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona"  required>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Tipo Documento </label>
-                                    <input class="form-control" value="<?php echo $persona_data->getTipoDocumento()?>" type="text" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" maxlength="20" size="20" required>
+                                    <input class="form-control" value="<?php echo $persona_data->getTipoDocumento()?>" type="text" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" "  required>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Documento</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getDocumentoPersona()?>" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
+                                    <input class="form-control" value="<?php echo $persona_data->getDocumentoPersona()?>" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona"  required>
                                 </div>
 
 

@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Controlador/ProductoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelo/Producto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/MarcaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProveedorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Marca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Marca.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/proveedor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/proveedor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +70,7 @@
         <item name="laragon" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="marca: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="producto: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -140,6 +161,7 @@
       <workItem from="1573157337640" duration="3461000" />
       <workItem from="1573264689121" duration="1370000" />
       <workItem from="1573510019555" duration="18000" />
+      <workItem from="1573564486151" duration="13857000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>

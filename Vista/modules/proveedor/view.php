@@ -42,7 +42,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Viaje
+                Datos Proveedor
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -55,7 +55,7 @@
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Ver Datos Viaje</h3>
+                    <h3 class="box-title"> Proveedor</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>

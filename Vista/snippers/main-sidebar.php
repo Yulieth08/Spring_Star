@@ -36,7 +36,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-barcode"></i> <span>Marca</span>
-                    <span class="pull-righ-container">
+                    <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
                 </a>

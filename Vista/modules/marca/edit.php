@@ -55,7 +55,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar Datos Marca
+                Editar Datos Marca
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>

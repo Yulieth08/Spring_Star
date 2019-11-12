@@ -53,7 +53,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar datos persona
+                Insertar datos Persona
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <form method="post" action="../../../Controlador/PersonaController.php?action=crear">
+                <form method="post" action="../../../Controlador/ProductoCotroller.php?action=crear">
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-6">

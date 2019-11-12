@@ -10,7 +10,6 @@ use Zend\Hydrator\ReflectionHydrator; //Requerido para convertir un objeto en Ar
 if(!empty($_GET['action'])){
     PersonaController::main($_GET['action']);
 }else{
-    echo "No se encontro ninguna accion...";
 }
 
 
@@ -81,7 +80,6 @@ class PersonaController
             $arrayPersona['Rol'] = $_POST['Rol'];
              $arrayPersona['Estado'] = "Activo";
             $arrayPersona['Id_persona'] = $_POST['Id_persona'];
-
             $persona = new Persona($arrayPersona);
             $persona->editar();
            header("Location: ../Vista/modules/persona/view.php?id=".$persona->getIdPersona()."");
@@ -92,7 +90,6 @@ class PersonaController
 
     static public function buscarID ($id){
         try {
-
             return Persona::buscarForId($id);
         } catch (Exception $e) {
             header("Location: ../Vista/modules/persona/manager.php?respuesta=error");

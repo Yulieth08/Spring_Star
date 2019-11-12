@@ -51,7 +51,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar Datos Marca
+                 Datos Marca
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -92,6 +92,10 @@
                             <td><?= $DataMarca->getNombreMarca(); ?></td>
                         </tr>
                         <tr>
+                            <td>Estado: </td>
+                            <td><?= $DataMarca->getEstado(); ?></td>
+                        </tr>
+
 
 
                         </tbody>

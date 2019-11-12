@@ -1,4 +1,3 @@
-CONTROLADOR
 <?php
 if(session_status() == PHP_SESSION_NONE){ //Si la session no ha iniciado
     session_start();
@@ -24,7 +23,11 @@ class Marcacontroller
             MarcaController::editar();
         } else if ($action == "buscarID") {
             MarcaController::buscarID($_REQUEST['Id_Marca']);
-        }
+        }else if ($action == "ActivarMarca") {
+            MarcaController::ActivarMarca();
+    } else if ($action == "InactivarMarca") {
+            MarcaController::InactivarMarca();
+    }
     }
 
     static public function crear()
@@ -33,6 +36,7 @@ class Marcacontroller
         try {
             $arrayMarca = array();
             $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
+            $arrayMarca['Estado'] = 'Activo';
             $Marca = new Marca($arrayMarca);
             if ($Marca->insertar()) {
                 header("Location: ../Vista/modules/marca/manager.php");
@@ -65,6 +69,8 @@ class Marcacontroller
             $arrayMarca = array();
             $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
             $arrayMarca['Id_Marca'] = $_POST['Id_Marca'];
+            $arrayMarca['Estado'] = "Activo";
+
             $Marca = new Marca ($arrayMarca);
             $Marca->editar();
             header("Location: ../Vista/modules/marca/view.php?id=".$Marca->getIdMarca()."");
@@ -84,10 +90,57 @@ class Marcacontroller
     }
 
 
+    static public function selectMarca ($isMultiple=false,
+                                           $isRequired=true,
+                                           $id="Id_Marca",
+                                           $nombre="Id_Marca",
+                                           $defaultValue="",
+                                           $class="",
+                                           $where="",
+                                           $arrExcluir = array()){
+        $arrMarca = array();
+        if($where != ""){
+            $base = "SELECT * FROM marca WHERE ";
+            $arrMarca = marca::buscar($base.$where);
+        }else{
+            $arrMarca = marca::getAll();
+        }
+        $htmlSelect = "<select ".(($isMultiple) ? "multiple" : "")." ".(($isRequired) ? "required" : "")." id= '".$id."' name='".$nombre."' class='".$class."'>";
+        $htmlSelect .= "<option value=''>Seleccione</option>";
+        if(count($arrMarca) > 0){
+            foreach ($arrMarca as $Marca){
+                if (!Marcacontroller::MarcaIsArray($Marca->getIdMarca(),$arrExcluir))
+                    $htmlSelect .= "<option ".(($defaultValue != "") ? (($defaultValue == $Marca->getIdMarca()) ? "selected" : "" ) : "")." value='".$Marca->getIdMarca()."'>".$Marca->getNombreMarca()."</option>";
+            }
+        }
+        $htmlSelect .= "</select>";
+        return $htmlSelect;
+    }
 
-<<<<<<< HEAD
-}
-=======
+    static public function ActivarMarca(){
+        try{
+            $ObjMarca = Marca::buscarForId($_GET['Id_Marca']);
+            header("Location: ../Vista/modules/marca/manager.php");
+            $ObjMarca->setEstado("Activo");
+           $ObjMarca->editar();
+        }catch (Exception $e){
+            var_dump($e);
+        }
+    }
+    static public function InactivarMarca (){
+        try {
+            $ObjMarca = Marca::buscarForId($_GET['Id_Marca']);
+            $ObjMarca->setEstado("Inactivo");
+            $ObjMarca->editar();
+            header("Location: ../Vista/modules/marca/manager.php");
+        } catch (Exception $e) {
+            var_dump($e);
+            //header("Location: ../Vista/modules/persona/manager.php?respuesta=error");
+        }
+    }
+
+
+
 }
 
->>>>>>> origin/master
+
