@@ -57,7 +57,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar Datos Proveedor
+                 Datos Proveedor
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -114,16 +114,7 @@
                         <?php } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Nit proveedor</th>
-                            <th>Nombre proveedor</th>
-                            <th>Telefono proveedor</th>
-                            <th>Direccion Proveedor</th>
-                            <th>Estado</th>
-                            <th>Acciones</th>
-                        </tr>
-                        </tfoot>
+
                     </table>
                 </div>
                 <!-- /.box-body -->

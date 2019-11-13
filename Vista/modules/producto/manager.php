@@ -113,15 +113,7 @@
                         <?php } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Marca</th>
-                            <th>Referencia </th>
-                            <th>Tipo Producto</th>
-                            <th>Estado</th>
-                            <th>Acciones</th>
-                        </tr>
-                        </tfoot>
+
                     </table>
                 </div>
 

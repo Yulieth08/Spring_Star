@@ -116,13 +116,7 @@
                         <?php } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Nombre Marca</th>
-                            <th>Acciones</th>
-                        </tr>
-                        </tfoot>
-                    </table>
+                                        </table>
                 </div>
                 <!-- /.box-body -->
 

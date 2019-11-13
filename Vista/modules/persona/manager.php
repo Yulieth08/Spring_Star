@@ -121,19 +121,7 @@
                         <?php } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Tipo Documento</th>
-                            <th>Documento</th>
-                            <th>Email</th>
-                            <th>Contraseña</th>
-                            <th>Rol</th>
-                            <th>Estado</th>
-                            <th>Acciones</th>
-                        </tr>
-                        </tfoot>
+
                     </table>
                 </div>
 
