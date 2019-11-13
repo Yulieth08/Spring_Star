@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
+    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="Modulo Proveedor">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Spring_Star.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spring_Star.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,17 +53,17 @@
         <item name="laragon" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="producto: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="proveedor: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="persona: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -75,6 +72,12 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -99,7 +102,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -154,6 +157,8 @@
       <workItem from="1573510019555" duration="18000" />
       <workItem from="1573564486151" duration="21211000" />
       <workItem from="1573648327702" duration="899000" />
+      <workItem from="1573665626911" duration="1387000" />
+      <workItem from="1573673262120" duration="4707000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>

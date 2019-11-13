@@ -29,6 +29,9 @@ class PersonaController
         } else if ($action == "InactivarPersona") {
             PersonaController::InactivarPersona();
         }
+        else if ($action == "ValidarDocumento") {
+            PersonaController::ValidarDocumento();
+        }
     }
 
     static public function crear()
@@ -118,6 +121,18 @@ class PersonaController
             //header("Location: ../Vista/modules/persona/manager.php?respuesta=error");
         }
     }
+    static public function ValidarDocumento (){
+        $doc=$_POST['documento'];
+        $ObjPersona = Persona::buscar("SELECT * FROM persona WHERE Documento_Persona='$doc'");
+        if($ObjPersona==null){
+            echo 'Disponible';
+        }else{
+            echo 'No disponible';
+        }
+
+    }
+
+
 
 }
 

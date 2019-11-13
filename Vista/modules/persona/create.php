@@ -76,6 +76,9 @@
                             <i class="fa fa-times"></i></button>
                     </div>
                 </div>
+                <div id="doc_validado">
+
+                </div>
 
                 <form method="post" action="../../../Controlador/PersonaController.php?action=crear">
                     <div class="box-body">
@@ -84,40 +87,23 @@
 
                                 <!-- /.form-group -->
                                 <div class="form-group">
+                                    <label for="Tipo_Documento">Tipo Documento</label>
+                                    <select class="form-control" name="Tipo_Documento" id="Tipo_Documento" required>
+                                        <option value="1">C.C</option>
+                                        <option value="2">T.I</option>
+                                        <option value="3">C.E</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
                                     <label>Nombre</label>
                                     <input class="form-control" type="text" placeholder="Ingrese su Nombre" id="Nombre_persona" name="Nombre_persona" maxlength="45" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Apellido</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona" maxlength="45" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Tipo Documento </label>
-                                    <input class="form-control" type="text" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" maxlength="20" size="20" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Documento</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
-                                </div>
-                                <!-- /.form-group -->
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-md-6">
-
-
-                                <div class="form-group">
                                     <label>Email</label>
                                     <input class="form-control" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
                                 </div>
-
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
-                                </div>
-
                                 <div class="form-group">
                                     <label>Rol</label>
                                     <select class="form-control" name="Rol" id="Rol" required>
@@ -127,7 +113,27 @@
 
                                     </select>
                                 </div>
+                                <!-- /.form-group -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
 
+                                <div class="form-group">
+                                    <label>Documento</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
+
+                                </div>
+                                <div class="form-group">
+                                    <label>Apellido</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona" maxlength="45" required>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="form-control" type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
+                                </div>
 
 
                                 <!-- /.form-group -->
@@ -173,4 +179,6 @@
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
+
+    <script src="../../../Vista/build/js/main.js"></script>
     <!-- AdminLTE for demo purposes -->
