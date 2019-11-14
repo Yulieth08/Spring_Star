@@ -1,5 +1,7 @@
+<?php require ("../../snippers/checkLogin.php") ?>
 <?php require ("../../../Modelo/Marca.php")?>
 <?php require("../../../Controlador/MarcaController.php") ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -122,8 +124,7 @@
     <!-- /.content-wrapper -->
     <?php include ('../../snippers/Fotter.php') ?>
 
-    <!-- Control Sidebar -->
-    <?php include ('../../snippers/control_sidebar.php') ?>
+
 
     <!-- ./wrapper -->
 

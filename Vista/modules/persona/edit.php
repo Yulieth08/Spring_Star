@@ -1,4 +1,7 @@
+<?php require ("../../snippers/checkLogin.php") ?>
+
 <?php require("../../../Controlador/PersonaController.php") ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -178,10 +181,7 @@ Editar Datos Persona            </h1>
     <!-- /.content-wrapper -->
     <?php include ('../../snippers/Fotter.php') ?>
 
-    <!-- Control Sidebar -->
-    <?php include ('../../snippers/control_sidebar.php') ?>
 
-    <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>

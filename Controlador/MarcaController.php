@@ -106,7 +106,6 @@ class Marcacontroller
             $arrMarca = marca::getAll();
         }
         $htmlSelect = "<select ".(($isMultiple) ? "multiple" : "")." ".(($isRequired) ? "required" : "")." id= '".$id."' name='".$nombre."' class='".$class."'>";
-        $htmlSelect .= "<option value=''>Seleccione</option>";
         if(count($arrMarca) > 0){
             foreach ($arrMarca as $Marca){
                 if (!Marcacontroller::MarcaIsArray($Marca->getIdMarca(),$arrExcluir))

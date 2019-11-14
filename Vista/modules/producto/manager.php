@@ -1,3 +1,4 @@
+<?php require ("../../snippers/checkLogin.php") ?>
 <?php require ("../../../Modelo/Producto.php")?>
 
 
@@ -130,11 +131,6 @@
     </div>
     <!-- /.content-wrapper -->
     <?php include ('../../snippers/Fotter.php') ?>
-
-    <!-- Control Sidebar -->
-    <?php include ('../../snippers/control_sidebar.php') ?>
-
-    <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
