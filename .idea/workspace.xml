@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Vista/snippers/checkLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/MarcaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/snippers/control_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/control_sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/snippers/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +158,7 @@
       <workItem from="1573665626911" duration="1387000" />
       <workItem from="1573673262120" duration="5386000" />
       <workItem from="1573739584445" duration="12064000" />
-      <workItem from="1573756652762" duration="5726000" />
+      <workItem from="1573756652762" duration="5965000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -259,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573750287857</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="de todo xd xd">
+      <created>1573766884799</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573766884799</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +275,7 @@
     <MESSAGE value="Modulo Proveedor23" />
     <MESSAGE value="Arreglos" />
     <MESSAGE value="logueo" />
-    <option name="LAST_COMMIT_MESSAGE" value="logueo" />
+    <MESSAGE value="de todo xd xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="de todo xd xd" />
   </component>
 </project>
