@@ -7,6 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333
 {
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zend\\Stdlib\\' => 12,
+            'Zend\\Hydrator\\' => 14,
+        ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
@@ -14,10 +19,22 @@ class ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333
     );
 
     public static $prefixDirsPsr4 = array (
+        'Zend\\Stdlib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
+        ),
+        'Zend\\Hydrator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-hydrator/src',
+        ),
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
+    );
+
+    public static $classMap = array (
+        'Verot\\Upload\\Upload' => __DIR__ . '/..' . '/verot/class.upload.php/src/class.upload.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +42,7 @@ class ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2efc1e66a7fe42140f79a6cac9959333::$classMap;
 
         }, null, ClassLoader::class);
     }

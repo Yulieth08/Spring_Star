@@ -32,6 +32,11 @@ class PersonaController
         else if ($action == "ValidarDocumento") {
             PersonaController::ValidarDocumento();
         }
+        else if ($action == "login"){
+            PersonaController::login();
+        }else if($action == "cerrarSession"){
+            PersonaController::cerrarSession();
+        }
     }
 
     static public function crear()
@@ -130,6 +135,40 @@ class PersonaController
             echo 'No disponible';
         }
 
+    }
+
+    public static function login (){
+        try {
+            if(!empty($_POST['Email_persona']) && !empty($_POST['Contraseña'])){
+                $tmpPerson = new Persona();
+                $respuesta = $tmpPerson->Login($_POST['Email_persona'], $_POST['Contraseña']);
+                if (is_a($respuesta,"Persona")) {
+                    $hydrator = new ReflectionHydrator(); //Instancia de la clase para convertir objetos
+                    $ArrDataPersona = $hydrator->extract($respuesta); //Convertimos el objeto persona en un array
+                    unset($ArrDataPersona["datab"],$ArrDataPersona["isConnected"],$ArrDataPersona["relEspecialidades"]); //Limpiamos Campos no Necesarios
+                    $_SESSION['UserInSession'] = $ArrDataPersona;
+                    header("Location: ../Vista/modules/persona/manager.php");
+
+                }else{
+
+                    header("Location: ../Vista/modules/persona/login.php?respuesta=error");
+
+                }
+                return $respuesta; //Si la llamada es por funcion
+            }else{
+                header('Location: ');
+                return "Datos Vacios"; //Si la llamada es por funcion
+            }
+        } catch (Exception $e) {
+            var_dump($e);
+            header("Location: ../login.php?respuesta=error");
+        }
+    }
+
+    public static function cerrarSession (){
+        session_unset();
+        session_destroy();
+        header("Location: ../Vista/modules/persona/login.php");
     }
 
 

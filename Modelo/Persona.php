@@ -267,6 +267,24 @@ class Persona extends Conexion
 
 
 
-
+    public function Login($Email_persona, $Contraseña){
+        $tmp = new Persona();
+        $resultPersonas = $tmp->getRows("SELECT * FROM persona WHERE Email_persona = '$Email_persona'");
+        if(count($resultPersonas) >= 1){
+            $getrows = $tmp->getRows("SELECT * FROM persona WHERE Email_persona = '$Email_persona' AND Contraseña = '$Contraseña'");
+            if(count($getrows) >= 1){
+                foreach ($getrows as $valor) {
+                    $resultPersonas = new Persona($valor);
+                    return $resultPersonas;
+                }
+            }else{
+                return "Contraseña Incorrecta";
+            }
+        }else{
+            return "Usuario Incorrecto";
+        }
+        $tmp->Disconnect();
+        return null;
+    }
 
 }
