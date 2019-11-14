@@ -25,9 +25,9 @@ class Marcacontroller
             MarcaController::buscarID($_REQUEST['Id_Marca']);
         }else if ($action == "ActivarMarca") {
             MarcaController::ActivarMarca();
-    } else if ($action == "InactivarMarca") {
+        } else if ($action == "InactivarMarca") {
             MarcaController::InactivarMarca();
-    }
+        }
     }
 
     static public function crear()
@@ -91,13 +91,13 @@ class Marcacontroller
 
 
     static public function selectMarca ($isMultiple=false,
-                                           $isRequired=true,
-                                           $id="Id_Marca",
-                                           $nombre="Id_Marca",
-                                           $defaultValue="",
-                                           $class="",
-                                           $where="",
-                                           $arrExcluir = array()){
+                                        $isRequired=true,
+                                        $id="Id_Marca",
+                                        $nombre="Id_Marca",
+                                        $defaultValue="",
+                                        $class="",
+                                        $where="",
+                                        $arrExcluir = array()){
         $arrMarca = array();
         if($where != ""){
             $base = "SELECT * FROM marca WHERE ";
@@ -122,7 +122,7 @@ class Marcacontroller
             $ObjMarca = Marca::buscarForId($_GET['Id_Marca']);
             header("Location: ../Vista/modules/marca/manager.php");
             $ObjMarca->setEstado("Activo");
-           $ObjMarca->editar();
+            $ObjMarca->editar();
         }catch (Exception $e){
             var_dump($e);
         }
@@ -142,5 +142,3 @@ class Marcacontroller
 
 
 }
-
-

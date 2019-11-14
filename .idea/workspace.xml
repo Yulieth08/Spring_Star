@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="Modulo Proveedor">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/build/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Spring_Star.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spring_Star.iml" afterDir="false" />
+    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Vista/modules/persona/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/MarcaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/MarcaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProductoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Marca.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Marca.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +165,8 @@
       <workItem from="1573564486151" duration="21211000" />
       <workItem from="1573648327702" duration="899000" />
       <workItem from="1573665626911" duration="1387000" />
-      <workItem from="1573673262120" duration="4707000" />
+      <workItem from="1573673262120" duration="5386000" />
+      <workItem from="1573739584445" duration="4821000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -216,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573590832857</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modulo Proveedor23">
+      <created>1573678595136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573678595136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +259,7 @@
     <MESSAGE value="fdadaad" />
     <MESSAGE value="* Modulo de Marca, Producto y Persona" />
     <MESSAGE value="Modulo Proveedor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modulo Proveedor" />
+    <MESSAGE value="Modulo Proveedor23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo Proveedor23" />
   </component>
 </project>

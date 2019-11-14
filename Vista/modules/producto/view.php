@@ -95,11 +95,11 @@
                         <tr>
                             <td>Referencia: </td>
                             <td><?= $Producto_data->getCodigoProducto(); ?></td>
-                      </tr>
+                        </tr>
                         <tr>
                             <td>Tipo Producto:
                             <td><?= $Producto_data->getTipoProducto();?></td>
-                       </tr>
+                        </tr>
 
                         <tr>
                             <td>Estado: </td>
@@ -149,3 +149,4 @@
     <!-- AdminLTE for demo purposes -->
 </body>
 </html>
+

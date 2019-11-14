@@ -56,7 +56,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Insertar datos producto
+                Insertar datos persona
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -69,7 +69,7 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Producto</h3>
+                    <h3 class="box-title">Persona</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -89,12 +89,12 @@
                                 <div class="form-group">
                                     <label>Marca</label>
                                     <?= Marcacontroller::selectMarca( false,
-                                            false,
-                                            "Id_Marca",
-                                            "Id_Marca",
-                                            "",
-                                            "form-control",
-                                            "Estado = 'Activo'") ?>
+                                        false,
+                                        "Id_Marca",
+                                        "Id_Marca",
+                                        "",
+                                        "form-control",
+                                        "Estado = 'Activo'") ?>
 
                                 </div>
 
@@ -102,7 +102,7 @@
                                     <label>Referencia Producto</label>
                                     <input class="form-control" type="text" placeholder="Ingrese referencia producto" id="Codigo_producto" name="Codigo_producto"  required>
                                 </div>
-                                  <!-- /.form-group -->
+                                <!-- /.form-group -->
                             </div>
                             <!-- /.col -->
                             <div class="col-md-6">
@@ -111,11 +111,11 @@
                                 <div class="form-group">
                                     <label>Tipo Producto</label>
 
-                                      <select class="form-control" name="Tipo_producto" id="Tipo_producto" required>
+                                    <select class="form-control" name="Tipo_producto" id="Tipo_producto" required>
                                         <option value="Calzado">Calzado</option>
                                         <option value="Correas">Correas</option>
                                         <option value="Billeteras">Billeteras</option>
-                                      </select>
+                                    </select>
 
                                 </div>
 
@@ -125,7 +125,7 @@
 
 
 
-                                <!-- /.form-group -->
+                            <!-- /.form-group -->
                             <!-- /.col -->
                         </div>
                         <!-- /.row -->

@@ -122,7 +122,7 @@ class Marca extends Conexion
     {
         $result = $this->insertRow("INSERT INTO marca VALUES (NULL, ?,?)", array(
                 $this->Nombre_Marca,
-                 $this->Estado,
+                $this->Estado,
 
             )
         );
@@ -135,7 +135,7 @@ class Marca extends Conexion
         $this->updateRow("UPDATE marca SET  Nombre_Marca = ? , Estado=? WHERE Id_Marca = ?", array(
             $this->Nombre_Marca,
             $this->Estado,
-           $this->Id_Marca
+            $this->Id_Marca
         ));
         $this->Disconnect();
     }
@@ -147,3 +147,6 @@ class Marca extends Conexion
     }
 
 }
+
+
+

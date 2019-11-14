@@ -90,6 +90,18 @@ Editar Datos Persona            </h1>
                             <div class="col-md-6">
 
                                 <div class="form-group">
+                                    <label>Tipo Documento </label>
+
+                                    <select class="form-control" name="Tipo_Documento" id="Tipo_Documento" required>
+                                        <option <?php if ($persona_data->getTipoDocumento() == "C.C") { echo "value=\"C.C\""; echo "selected";}?>>C.C</option>
+                                        <option <?php if ($persona_data->getTipoDocumento() == "T.I") { echo "value=\"T.I\""; echo "selected";}?>>T.I</option>
+                                        <option <?php if ($persona_data->getTipoDocumento() == "C.E") { echo "value=\"C.E\""; echo "selected";}?>>C.E</option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group">
                                     <label>Nombre</label>
                                         <input id="Id_persona" value="<?php echo $persona_data->getIdPersona(); ?>" name="Id_persona" hidden required type="text">
 
@@ -97,38 +109,9 @@ Editar Datos Persona            </h1>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Apellido</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona"  required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Tipo Documento </label>
-                                    <input class="form-control" value="<?php echo $persona_data->getTipoDocumento()?>" type="text" placeholder="Tipo Documento" id="Tipo_Documento" name="Tipo_Documento" "  required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Documento</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getDocumentoPersona()?>" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona"  required>
-                                </div>
-
-
-                                <!-- /.form-group -->
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-md-6">
-
-
-
-                                <div class="form-group">
                                     <label>Email</label>
                                     <input class="form-control" value="<?php echo $persona_data->getEmailPersona()?>" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
                                 </div>
-
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getContraseña()?>"  type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
-                                </div>
-
                                 <div class="form-group">
                                     <label>Rol</label>
                                     <select class="form-control" name="Rol" id="Rol" required>
@@ -138,6 +121,27 @@ Editar Datos Persona            </h1>
 
                                     </select>
                                 </div>
+
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label>Documento</label>
+                                    <input class="form-control" value="<?php echo $persona_data->getDocumentoPersona()?>" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona"  required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Apellido</label>
+                                    <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona"  required>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Contraseña</label>
+                                    <input class="form-control" value="<?php echo $persona_data->getContraseña()?>"  type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
+                                </div>
+
+
 
                                 <!-- /.form-group -->
                             </div>

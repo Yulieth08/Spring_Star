@@ -1,5 +1,4 @@
 
-
 <?php require ("../../../Modelo/Marca.php")?>
 
 
@@ -59,7 +58,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                 Datos Marca
+                Datos Marca
             </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/Compumedica"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -116,7 +115,13 @@
                         <?php } ?>
 
                         </tbody>
-                                        </table>
+                        <tfoot>
+                        <tr>
+                            <th>Nombre Marca</th>
+                            <th>Acciones</th>
+                        </tr>
+                        </tfoot>
+                    </table>
                 </div>
                 <!-- /.box-body -->
 

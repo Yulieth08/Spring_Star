@@ -74,7 +74,7 @@ class ProductoController
             $arrproducto['Estado'] = "Activo";
             $arrproducto['Id_producto'] = $_POST['Id_producto'];
             $arrproducto['Id_Marca'] = $_POST['Id_Marca'];
-                   $Producto = new Producto( $arrproducto);
+            $Producto = new Producto( $arrproducto);
             $Producto->editar();
             header("Location: ../Vista/modules/producto/view.php?id=".$Producto->getIdProducto()."");
         }catch (Exception $e){
@@ -115,27 +115,3 @@ class ProductoController
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
