@@ -70,7 +70,6 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Producto</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -139,8 +138,8 @@
                         </div>
                         <div class="box-footer">
                             <div class="box-footer">
-                                <button type="reset" class="btn btn-default">Cancelar</button>
-                                <button type="submit" class="btn btn-info pull-right">Enviar</button>
+                                <button type="reset" class="btn btn-danger">Cancelar</button>
+                                <button type="submit" class="btn btn-success pull-right">Enviar</button>
                             </div>
                         </div>
                     </form>

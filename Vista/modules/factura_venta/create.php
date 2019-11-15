@@ -1,7 +1,5 @@
 <?php require ("../../snippers/checkLogin.php") ?>
 
-<?php require("../../../Controlador/PersonaController.php") ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,12 +32,6 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-
-
-
-
-
-
 <body class="hold-transition skin-green sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
@@ -51,12 +43,11 @@
     <?php include ('../../snippers/main-sidebar.php') ?>
 
     <!-- =============================================== -->
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>Editar Datos Persona </h1>
+            <h1>Factura Venta </h1>
             <ol class="breadcrumb">
                 <li><a href="<?= "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
             </ol>
@@ -78,119 +69,136 @@
                     </div>
                 </div>
 
-                <?php
-                if (!empty($_GET["id"]) && isset($_GET["id"])) { ?>
-                <?php
-                $persona_data = PersonaController::buscarID($_GET["id"]);
-                ?>
-
-
-                <form method="post" action="../../../Controlador/PersonaController.php?action=editar">
+                <form method="post" >
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-6">
 
+                                <!-- /.form-group -->
                                 <div class="form-group">
-                                    <label>Tipo Documento </label>
-
-                                    <select class="form-control" name="Tipo_Documento" id="Tipo_Documento" required>
-                                        <option <?php if ($persona_data->getTipoDocumento() == "C.C") { echo "value=\"C.C\""; echo "selected";}?>>C.C</option>
-                                        <option <?php if ($persona_data->getTipoDocumento() == "T.I") { echo "value=\"T.I\""; echo "selected";}?>>T.I</option>
-                                        <option <?php if ($persona_data->getTipoDocumento() == "C.E") { echo "value=\"C.E\""; echo "selected";}?>>C.E</option>
-
-                                    </select>
-
+                                    <label>Fecha Venta</label>
+                                    <input class="form-control" type="date" placeholder="Ingrese su fecha" id="Fecha_compra" name="Fecha_compra">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nombre Cliente</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese nombre del CLiente" id="Id_persona" name="Id_persona" maxlength="45" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefono Cliente </label>
+                                    <input class="form-control" type="number" placeholder="Telefono Cliente" id="Telefono_Persona" name="Telefono_Persona" " required>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Nombre</label>
-                                        <input id="Id_persona" value="<?php echo $persona_data->getIdPersona(); ?>" name="Id_persona" hidden required type="text">
-
-                                    <input class="form-control" value="<?php echo $persona_data->getNombrePersona()?>" type="text" placeholder="Ingrese su Nombre" id="Nombre_persona" name="Nombre_persona" >
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getEmailPersona()?>" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Telefono Persona</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getTelefonoPersona()?>" type="number" placeholder="Ingrese su Email" id="Telefono_Persona" name="Telefono_Persona" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Rol</label>
-                                    <select class="form-control" name="Rol" id="Rol" required>
-                                        <option <?php if ($persona_data->getRol() == "Administrador") { echo "value=\"Administrador\""; echo "selected";}?>>Administrador</option>
-                                        <option <?php if ($persona_data->getRol() == "Vendedor") { echo "value=\"Vendedor\""; echo "selected";}?>>Vendedor</option>
-                                        <option <?php if ($persona_data->getRol() == "Cliente") { echo "value=\"Cliente\""; echo "selected";}?>>Cliente</option>
-
-                                    </select>
-                                </div>
 
                             </div>
                             <!-- /.col -->
                             <div class="col-md-6">
 
                                 <div class="form-group">
-                                    <label>Documento</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getDocumentoPersona()?>" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona"  required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Apellido</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona"  required>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getContraseña()?>"  type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
+                                    <label>Nombre Vendedor</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese nombre del Vendedor" id="Id_persona" name="Id_persona" maxlength="45" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Direccion</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getDireccionPersona()?>"  type="text" placeholder="Ingrese su direccion" id="Direccion_Persona" name="Direccion_Persona" required>
+                                    <label>Documento Cliente </label>
+                                    <input class="form-control" type="number" placeholder="Documento Cliente" id="Documento_Persona" name="Documento_Persona" " required>
                                 </div>
 
-
-
-                                <!-- /.form-group -->
                             </div>
                             <!-- /.col -->
                         </div>
                         <!-- /.row -->
                     </div>
+
+
                     <div class="box-footer">
                         <div class="box-footer">
-                            <button type="reset" class="btn btn-danger">Cancelar</button>
-                            <button type="submit" class="btn btn-success pull-right">Enviar</button>
+                            <button type="reset" class="btn btn-default">Cancelar</button>
+                            <button type="submit" class="btn btn-info pull-right">Enviar</button>
                         </div>
                     </div>
                 </form>
                 <!-- /.box-body -->
-                <?php } else { ?>
-                    <?php if (empty($_GET["respuesta"])) { ?>
-                        <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                                    aria-hidden="true">×</span>
-                            </button>
-                            <strong>Error!</strong> No se encontro ninguna persona con el parametro de busqueda.
-                        </div>
-                    <?php } ?>
-                <?php } ?>
+
 
                 <!-- /.box-footer-->
             </div>
             <!-- /.box -->
+
+        </section>
+        <!-- /.content -->
+
     </div>
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) --><!-- Main content -->
+        <section class="content">
+
+            <!-- Default box -->
+            <div class="box">
+                <div class="box-header with-border">
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                                title="Collapse">
+                            <i class="fa fa-minus"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                            <i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+
+                <form method="post" >
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <!-- /.form-group -->
+                                <div class="form-group">
+                                    <label>Fecha Venta</label>
+                                    <input class="form-control" type="date" placeholder="Ingrese su fecha" id="Fecha_compra" name="Fecha_compra">
+                                </div>
+                                <div class="form-group">
+                                    <label>Nombre Cliente</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese nombre del CLiente" id="Id_persona" name="Id_persona" maxlength="45" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefono Cliente </label>
+                                    <input class="form-control" type="number" placeholder="Telefono Cliente" id="Telefono_Persona" name="Telefono_Persona" " required>
+                                </div>
+
+
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label>Nombre Vendedor</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese nombre del Vendedor" id="Id_persona" name="Id_persona" maxlength="45" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Documento Cliente </label>
+                                    <input class="form-control" type="number" placeholder="Documento Cliente" id="Documento_Persona" name="Documento_Persona" " required>
+                                </div>
+
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                </form>
+                <!-- /.box-body -->
+
+
+                <!-- /.box-footer-->
+            </div>
+            <!-- /.box -->
+
         </section>
         <!-- /.content -->
     </div>
+
+
     <!-- /.content-wrapper -->
     <?php include ('../../snippers/Fotter.php') ?>
-
-
 
     <!-- jQuery 3 -->
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>

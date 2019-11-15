@@ -34,3 +34,7 @@ function validarDocumento() {
 
 
 }
+
+function nFactura() {
+    alert("hola");
+}

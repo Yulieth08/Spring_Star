@@ -66,8 +66,6 @@
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Producto</h3>
-
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                         <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
@@ -122,7 +120,7 @@
                 <div class="ln_solid"></div>
                 <div class="form-group">
                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                        <a href="manager.php" class="btn btn-primary" >Volver</a>
+                        <a href="manager.php" class="btn btn-danger" >Volver</a>
                         <a href="edit.php?id=<?= $_GET["id"] ?>" class="btn btn-success">Editar</a>
                     </div>
                 </div>

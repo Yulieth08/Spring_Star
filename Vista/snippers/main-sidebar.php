@@ -23,8 +23,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/persona/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/persona/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/persona/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/persona/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
                 </ul>
             </li>
@@ -38,8 +38,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/marca/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/marca/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/marca/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/marca/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
                 </ul>
             </li>
@@ -54,8 +54,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/producto/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/producto/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/producto/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/producto/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
                 </ul>
             </li>
@@ -69,8 +69,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/proveedor/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
-                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/spring_star"; ?>/Vista/modules/proveedor/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/proveedor/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                    <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/proveedor/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
                 </ul>
             </li>
@@ -84,14 +84,14 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="treeview">
-                        <a href="#"><i class="fa fa-circle-o"></i> Factura Venta
+                        <a href="#"><i class="fa fa-circle-o"></i> Factura Compra
                             <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i>Crear</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i>Administrar</a></li>
+                            <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/factura_compra/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                            <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/factura_compra/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
 
 
                         </ul>
@@ -100,14 +100,15 @@
 
 
                     <li class="treeview">
-                        <a href="#"><i class="fa fa-circle-o"></i> Factura Compra
+                        <a href="#"><i class="fa fa-circle-o"></i> Factura Venta
                             <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i>Crear</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i>Administrar</a></li>
+                            <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/factura_venta/create.php"><i class="fa fa-circle-o"></i> Crear</a></li>
+                            <li><a href="<?=  "http://".$_SERVER["HTTP_HOST"]."/Spring_Star"; ?>/Vista/modules/factura_venta/manager.php"><i class="fa fa-circle-o"></i> Administrar</a></li>
+
 
                         </ul>
 

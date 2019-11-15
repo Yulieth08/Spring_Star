@@ -30,6 +30,8 @@ class ProductoController
             ProductoController::ActivarProducto();
         } else if ($action == "InactivarProducto") {
             ProductoController::InactivarProducto();
+        }else if($action =="NumeroFactura"){
+            ProductoController::obtenerNumero();
         }
     }
 
@@ -112,6 +114,19 @@ class ProductoController
             var_dump($e);
             //header("Location: ../Vista/modules/producto/manager.php?respuesta=error");
         }
+    }
+
+    static public function obtenerNumero(){
+        $arrayFacturaCompra=FacturaCompra::getAll();
+        $ultimoRegistro=end($arrayFacturaCompra);
+        $nfactura="";
+        if($ultimoRegistro!=null){
+            $nfactura="FC-00";
+            $ultimoId=$ultimoRegistro->getIdFacturaCompra();
+            $ultimoId=$ultimoId+1;
+            $nfactura.=$ultimoId;
+        }
+        return $nfactura;
     }
 
 }

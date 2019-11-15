@@ -117,14 +117,16 @@
                             </div>
                             <!-- /.col -->
                         </div>
+
+
                         <!-- /.row -->
                     </div>
 
 
                     <div class="box-footer">
                         <div class="box-footer">
-                            <button type="reset" class="btn btn-default">Cancelar</button>
-                            <button type="submit" class="btn btn-info pull-right">Enviar</button>
+                            <button type="reset" class="btn btn-danger">Cancelar</button>
+                            <button type="submit" class="btn btn-success pull-right">Enviar</button>
                         </div>
                     </div>
                 </form>

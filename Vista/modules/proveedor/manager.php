@@ -120,12 +120,10 @@
                 <!-- /.box-body -->
             </div>
             <!-- /.box -->
-        </section>
 
-    </div>
 </div>
 <!-- /.box -->
-</div>
+
 <!-- /.content-wrapper -->
 <?php include ('../../snippers/Fotter.php') ?>
 

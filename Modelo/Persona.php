@@ -13,6 +13,8 @@ class Persona extends Conexion
     private $Email_persona;
     private $Contraseña;
     private $Rol;
+    private $Telefono_Persona;
+    private $Direccion_Persona;
     private $Estado;
 
     public function __construct($persona_data = array())
@@ -32,6 +34,8 @@ class Persona extends Conexion
             $this->Contraseña = "";
             $this->Rol = "";
             $this->Estado = "";
+            $this->Telefono_Persona = "";
+            $this-> Direccion_Persona= "";
         }
     }
 
@@ -180,6 +184,39 @@ class Persona extends Conexion
         $this->Estado = $Estado;
     }
 
+    /**
+     * @return string
+     */
+    public function getTelefonoPersona()
+    {
+        return $this->Telefono_Persona;
+    }
+
+    /**
+     * @param string $Telefono_Persona
+     */
+    public function setTelefonoPersona($Telefono_Persona)
+    {
+        $this->Telefono_Persona = $Telefono_Persona;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDireccionPersona()
+    {
+        return $this->Direccion_Persona;
+    }
+
+    /**
+     * @param string $Direccion_Persona
+     */
+    public function setDireccionPersona($Direccion_Persona)
+    {
+        $this->Direccion_Persona = $Direccion_Persona;
+    }
+
+
 
     public static function buscarForId($id)
     {
@@ -195,6 +232,8 @@ class Persona extends Conexion
             $Persona->Contraseña = $getrow['Contraseña'];
             $Persona->Rol = $getrow['Rol'];
             $Persona->Estado = $getrow['Estado'];
+            $Persona->Telefono_Persona = $getrow['Telefono_Persona'];
+            $Persona->Direccion_Persona = $getrow['Direccion_Persona'];
         }
         return $Persona;
     }
@@ -215,6 +254,8 @@ class Persona extends Conexion
             $Persona-> Contraseña= $valor['Contraseña'];
             $Persona-> Rol= $valor['Rol'];
             $Persona->Estado = $valor['Estado'];
+            $Persona-> Telefono_Persona= $valor['Telefono_Persona'];
+            $Persona-> Direccion_Persona= $valor['Direccion_Persona'];
             $Persona->Disconnect();
             array_push($arrPersona, $Persona);
         }
@@ -229,7 +270,7 @@ class Persona extends Conexion
 
     public function insertar()
     {
-        $result = $this->insertRow("INSERT INTO persona VALUES (NULL, ?, ?, ?, ?, ?, ?, ?,?)", array(
+        $result = $this->insertRow("INSERT INTO persona VALUES (NULL, ?, ?, ?, ?, ?, ?, ?,?,?,?)", array(
                 $this->Nombre_persona,
                 $this->Apellidos_persona,
                 $this->Tipo_Documento,
@@ -238,6 +279,9 @@ class Persona extends Conexion
                 $this->Contraseña,
                 $this->Rol,
                 $this->Estado,
+                $this->Telefono_Persona,
+                $this->Direccion_Persona,
+
             )
         );
         $this->Disconnect();
@@ -246,7 +290,7 @@ class Persona extends Conexion
 
     public function editar()
     {
-        $this->updateRow("UPDATE persona SET Nombre_persona = ?, Apellidos_persona = ?, Tipo_Documento = ?, Documento_Persona = ?,  Email_persona= ?,Contraseña  = ?, Rol= ?,  Estado = ? WHERE Id_persona = ?", array(
+        $this->updateRow("UPDATE persona SET Nombre_persona = ?, Apellidos_persona = ?, Tipo_Documento = ?, Documento_Persona = ?,  Email_persona= ?,Contraseña  = ?, Rol= ?,  Estado = ?,Telefono_Persona = ? , Direccion_Persona = ? WHERE Id_persona = ?", array(
             $this->Nombre_persona,
             $this->Apellidos_persona,
             $this->Tipo_Documento,
@@ -255,6 +299,8 @@ class Persona extends Conexion
             $this->Contraseña,
             $this->Rol,
             $this->Estado,
+            $this->Telefono_Persona,
+            $this->Direccion_Persona,
             $this->Id_persona
         ));
         $this->Disconnect();

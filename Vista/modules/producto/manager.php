@@ -71,7 +71,6 @@
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Producto</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -114,15 +113,7 @@
                         <?php } ?>
 
                         </tbody>
-                        <tfoot>
-                        <tr>
-                            <th>Marca</th>
-                            <th>Referencia </th>
-                            <th>Tipo Producto</th>
-                            <th>Estado</th>
-                            <th>Acciones</th>
-                        </tr>
-                        </tfoot>
+
                     </table>
                 </div>
 

@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Vista/snippers/control_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/control_sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/build/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/img/usuario.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProductoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Persona.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Persona.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/img/user2-160x160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/img/user2-160x160.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +76,7 @@
         <item name="laragon" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="persona: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="factura_compra: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -57,6 +85,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -90,7 +119,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Vista/snippers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Vista/modules/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -104,6 +134,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Spring_Star\Vista\modules\img" />
       <recent name="C:\laragon\www\Spring_Star\Vista\snippers" />
       <recent name="C:\laragon\www\Spring_Star\Modelo" />
       <recent name="C:\laragon\www\Spring_Star\Vista\modules\persona" />
@@ -158,7 +189,8 @@
       <workItem from="1573665626911" duration="1387000" />
       <workItem from="1573673262120" duration="5386000" />
       <workItem from="1573739584445" duration="12064000" />
-      <workItem from="1573756652762" duration="5965000" />
+      <workItem from="1573756652762" duration="6494000" />
+      <workItem from="1573835634305" duration="17319000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -244,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573766884799</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="de todo xd xd">
+      <created>1573766997309</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573766997309</updated>
+    </task>
+    <task id="LOCAL-00014" summary="de todo xd xd">
+      <created>1573767030893</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573767030893</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

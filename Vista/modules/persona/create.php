@@ -68,7 +68,6 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Persona</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -106,6 +105,12 @@
                                     <label>Email</label>
                                     <input class="form-control" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
                                 </div>
+
+                                <div class="form-group">
+                                    <label>Telefono Persona</label>
+                                    <input class="form-control" type="number" placeholder="Ingrese su Telefono" id="Telefono_Persona" name="Telefono_Persona" required>
+                                </div>
+
                                 <div class="form-group">
                                     <label>Rol</label>
                                     <select class="form-control" name="Rol" id="Rol" required>
@@ -122,7 +127,7 @@
 
                                 <div class="form-group">
                                     <label>Documento</label>
-                                    <input class="form-control" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
+                                    <input class="form-control" type="number" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
 
                                 </div>
                                 <div class="form-group">
@@ -138,6 +143,12 @@
                                 </div>
 
 
+                                <div class="form-group">
+                                    <label>Direccion</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Direccion" id="Direccion_Persona" name="Direccion_Persona" required>
+                                </div>
+
+
                                 <!-- /.form-group -->
                             </div>
                             <!-- /.col -->
@@ -148,8 +159,8 @@
 
                     <div class="box-footer">
                         <div class="box-footer">
-                            <button type="reset" class="btn btn-default">Cancelar</button>
-                            <button type="submit" class="btn btn-info pull-right">Enviar</button>
+                            <button type="reset" class="btn btn-danger">Cancelar</button>
+                            <button type="submit" class="btn btn-success pull-right">Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -165,6 +176,7 @@
     </div>
     <!-- /.content-wrapper -->
     <?php include ('../../snippers/Fotter.php') ?>
+
 
 
 
