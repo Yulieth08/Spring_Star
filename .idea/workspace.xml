@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controlador/FacturaCompraController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controlador/FacturaVentaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/FacturaCompra.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/FacturaVenta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modelo/Productos_Comprados.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/img/spring.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/persona/login2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-    </list>
+    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,6 +215,7 @@
       <workItem from="1574007088907" duration="825000" />
       <workItem from="1574041820950" duration="727000" />
       <workItem from="1574085138382" duration="15688000" />
+      <workItem from="1574180462610" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -343,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573853414962</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="cata">
+      <created>1574180519148</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574180519148</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +362,7 @@
     <MESSAGE value="logueo" />
     <MESSAGE value="de todo xd xd" />
     <MESSAGE value="de todo xd xd xd" />
-    <option name="LAST_COMMIT_MESSAGE" value="de todo xd xd xd" />
+    <MESSAGE value="cata" />
+    <option name="LAST_COMMIT_MESSAGE" value="cata" />
   </component>
 </project>
