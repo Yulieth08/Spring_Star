@@ -2,35 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Vista/build/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/manager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vista/modules/img/usuario.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controlador/FacturaCompraController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controlador/FacturaVentaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelo/FacturaCompra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelo/FacturaVenta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modelo/Productos_Comprados.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/img/spring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vista/modules/persona/login2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controlador/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProductoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modelo/Persona.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Persona.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/factura_compra/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/factura_venta/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/snippers/main-sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/img/user2-160x160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/almasaeed2010/adminlte/dist/img/user2-160x160.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +69,55 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="factura_compra: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="factura_venta: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="marca: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="persona: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="producto: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="producto_vendido: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="productos_comprados: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laragon" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="proveedor: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -190,7 +231,12 @@
       <workItem from="1573673262120" duration="5386000" />
       <workItem from="1573739584445" duration="12064000" />
       <workItem from="1573756652762" duration="6494000" />
-      <workItem from="1573835634305" duration="17319000" />
+      <workItem from="1573835634305" duration="17671000" />
+      <workItem from="1573873872946" duration="1108000" />
+      <workItem from="1573954460948" duration="597000" />
+      <workItem from="1574007088907" duration="825000" />
+      <workItem from="1574041820950" duration="727000" />
+      <workItem from="1574085138382" duration="15688000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -290,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573767030893</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="de todo xd xd xd">
+      <created>1573853414962</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573853414962</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +375,7 @@
     <MESSAGE value="Arreglos" />
     <MESSAGE value="logueo" />
     <MESSAGE value="de todo xd xd" />
-    <option name="LAST_COMMIT_MESSAGE" value="de todo xd xd" />
+    <MESSAGE value="de todo xd xd xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="de todo xd xd xd" />
   </component>
 </project>

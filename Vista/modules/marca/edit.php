@@ -105,7 +105,7 @@
                         </div>
                         <div class="box-footer">
                             <div class="box-footer">
-                                <button type="reset" class="btn btn-danger">Cancelar</button>
+                                <a href="manager.php" class="btn btn-danger" >Cancelar</a>
                                 <button type="submit" class="btn btn-success pull-right">Enviar</button>
                             </div>
                         </div>

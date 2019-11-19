@@ -109,6 +109,32 @@ class PersonaController
         }
     }
 
+    static public function selectPersona ($isMultiple=false,
+                                        $isRequired=true,
+                                        $id="Id_persona",
+                                        $nombre="Id_persona",
+                                        $defaultValue="",
+                                        $class="",
+                                        $where="",
+                                        $arrExcluir = array()){
+        $arrayPersona = array();
+        if($where != ""){
+            $base = "SELECT * FROM persona WHERE ";
+            $arrayPersona = Persona::buscar($base.$where);
+        }else{
+            $arrayPersona = Persona::getAll();
+        }
+        $htmlSelect = "<select ".(($isMultiple) ? "multiple" : "")." ".(($isRequired) ? "required" : "")." id= '".$id."' name='".$nombre."' class='".$class."'>";
+        if(count($arrayPersona) > 0){
+            foreach ($arrayPersona as $Persona){
+                if (!PersonaController::personaIsArray($Persona->getIdPersona(),$arrExcluir))
+                    $htmlSelect .= "<option ".(($defaultValue != "") ? (($defaultValue == $Persona->getIdPersona()) ? "selected" : "" ) : "")." value='".$Persona->getIdPersona()."'>".$Persona->getDocumentoPersona()."</option>";
+            }
+        }
+        $htmlSelect .= "</select>";
+        return $htmlSelect;
+    }
+
     static public function ActivarPersona(){
         try{
             $ObjPersona = Persona::buscarForId($_GET['Id_persona']);

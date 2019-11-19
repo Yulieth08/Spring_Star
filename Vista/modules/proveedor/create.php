@@ -125,7 +125,6 @@
 
                     <div class="box-footer">
                         <div class="box-footer">
-                            <button type="reset" class="btn btn-danger">Cancelar</button>
                             <button type="submit" class="btn btn-success pull-right">Enviar</button>
                         </div>
                     </div>

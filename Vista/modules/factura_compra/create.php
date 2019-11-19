@@ -1,4 +1,6 @@
 <?php require ("../../snippers/checkLogin.php") ?>
+<?php require("../../../Controlador/PersonaController.php") ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -90,7 +92,7 @@
 
                                 <div class="form-group">
                                     <label>Nit Proveedor </label>
-                                    <input class="form-control" type="number" placeholder="Nit Proveedor" id="Nit_Proveedor" name="Nit_Proveedor" " required>
+                                    <input class="form-control" type="number" placeholder="Nit Proveedor" id="Id_Proveedor" name="Id_Proveedor" " required>
                                 </div>
 
                                 <div class="form-group">
@@ -117,8 +119,15 @@
 
                                 <div class="form-group">
                                     <label>Documento quien recibe</label>
-                                    <input class="form-control" type="text" placeholder="Documneto quien reciber" id="Documento_Persona" name="Documento_Persona"  required>
+                                    <?= PersonaController::selectPersona( false,
+                                        false,
+                                        "Id_persona",
+                                        "Id_persona",
+                                        "",
+                                        "form-control",
+                                        "Rol != 'Cliente' and Estado = 'Activo' " ) ?>
                                 </div>
+
 
                             </div>
                             <!-- /.col -->

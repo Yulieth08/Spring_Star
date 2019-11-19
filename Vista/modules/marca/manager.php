@@ -84,6 +84,7 @@
                         <thead>
                         <tr>
                             <th>Nombre Marca</th>
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                         </thead>
