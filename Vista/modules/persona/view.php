@@ -65,13 +65,7 @@
 
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
-                <div class="box-header with-border">
-
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
-                    </div>
-                </div>
+                
                 <!-- /.box-header -->
 
                 <?php
@@ -104,19 +98,6 @@
                             <td>Documento: </td>
                             <td><?= $persona_data->getDocumentoPersona(); ?></td>
                         </tr>
-                        <tr>
-                            <td>Email: </td>
-                            <td><?= $persona_data->getEmailPersona(); ?></td>
-                        </tr>
-
-                        <tr>
-                            <td>Contraseña: </td>
-                            <td><?= $persona_data->getContraseña(); ?></td>
-                        </tr>
-                        <tr>
-                            <td>Rol: </td>
-                            <td><?= $persona_data->getRol(); ?></td>
-                        </tr>
 
                         <tr>
                             <td>Telefono: </td>
@@ -127,6 +108,22 @@
                             <td>Dirección: </td>
                             <td><?= $persona_data->getDireccionPersona(); ?></td>
                         </tr>
+                        <tr>
+                        <tr>
+                            <td>Rol: </td>
+                            <td><?= $persona_data->getRol(); ?></td>
+                        </tr>
+                            <td>Email: </td>
+                            <td><?= $persona_data->getEmailPersona(); ?></td>
+                        </tr>
+
+                        <tr>
+                            <td>Contraseña: </td>
+                            <td><?= $persona_data->getContraseña(); ?></td>
+                        </tr>
+
+
+
                         <tr>
                             <td>Estado: </td>
                             <td><?= $persona_data->getEstado(); ?></td>

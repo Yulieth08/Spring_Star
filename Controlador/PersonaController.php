@@ -48,13 +48,12 @@ class PersonaController
             $arrayPersona['Apellidos_persona'] = $_POST['Apellidos_persona'];
             $arrayPersona['Tipo_Documento'] = $_POST['Tipo_Documento'];
             $arrayPersona['Documento_Persona'] = $_POST['Documento_Persona'];
-            $arrayPersona['Email_persona'] = $_POST['Email_persona'];
-            $arrayPersona['Contraseña'] = $_POST['Contraseña'];
-            $arrayPersona['Rol'] = $_POST['Rol'];
-            $arrayPersona['Estado'] = 'Activo';
             $arrayPersona['Telefono_Persona'] = $_POST['Telefono_Persona'];
             $arrayPersona['Direccion_Persona'] = $_POST['Direccion_Persona'];
-
+            $arrayPersona['Rol'] = $_POST['Rol'];
+            $arrayPersona['Email_persona'] = $_POST['Email_persona'];
+            $arrayPersona['Contraseña'] = $_POST['Contraseña'];
+            $arrayPersona['Estado'] = 'Activo';
             $Persona = new Persona($arrayPersona);
             if ($Persona->insertar()){
                 header("Location: ../Vista/modules/persona/manager.php");

@@ -275,12 +275,12 @@ class Persona extends Conexion
                 $this->Apellidos_persona,
                 $this->Tipo_Documento,
                 $this->Documento_Persona,
-                $this->Email_persona,
-                $this->Contraseña,
-                $this->Rol,
-                $this->Estado,
                 $this->Telefono_Persona,
                 $this->Direccion_Persona,
+                $this->Rol,
+                $this->Email_persona,
+                $this->Contraseña,
+                $this->Estado,
 
             )
         );

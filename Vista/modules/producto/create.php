@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Spring Star</title>
     <!-- Tell the browser to be responsive to screen width -->
+    <link rel="stylesheet" href="../../build/css/main.css"
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../../../vendor/almasaeed2010/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -67,17 +69,11 @@
 
             <!-- Default box -->
             <div class="box">
-                <div class="box-header with-border">
+              
 
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                            <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                            <i class="fa fa-times"></i></button>
-                    </div>
+                <div id="prod_validado">
+
                 </div>
-
                 <form method="post" action="../../../Controlador/ProductoController.php?action=crear">
                     <div class="box-body">
                         <div class="row">
@@ -162,3 +158,4 @@
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
+    <script src="../../../Vista/build/js/main.js"></script>

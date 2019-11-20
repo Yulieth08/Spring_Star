@@ -58,18 +58,26 @@
                     <div>
                         <input type="password" class="form-control" id="Contraseña" name="Contraseña" placeholder="Contrasena" required="required" />
                     </div>
-                    <div>
+                    <div class="separator">
                         <input class="btn btn-default submit" type="submit" value="Ingresar">
                         <a class="reset_pass" href="#">Olvido su contraseña?</a>
                     </div>
                     <div class="clearfix"></div>
 
+
+                   <div class="separator">
+                       <p class="change_link">Nuevo en el Sitio?
+                           <a href="#signup" class="to_register"> Registrarse </a>
+                       </p>
+
+                       <div class="clearfix"></div>
                     <div>
                         <b><h1 ><i class="fas fa-boot"></i>
                                 Spring Star</h1></b>
 
                         <b><p >Spring Star &copy; 2019 </p></b>
                     </div>
+                   </div>
                 </form>
         </div>
     </div>

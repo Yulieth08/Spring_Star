@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Spring Star</title>
+
+    <link rel="stylesheet" href="../../build/css/main.css"
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -67,16 +69,7 @@
 
             <!-- Default box -->
             <div class="box">
-                <div class="box-header with-border">
-
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                            <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                            <i class="fa fa-times"></i></button>
-                    </div>
-                </div>
+              
                 <div id="doc_validado">
 
                 </div>
@@ -102,14 +95,17 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input class="form-control" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
+                                    <label>Telefono Persona</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Telefono" id="Telefono_Persona" name="Telefono_Persona" required>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Telefono Persona</label>
-                                    <input class="form-control" type="number" placeholder="Ingrese su Telefono" id="Telefono_Persona" name="Telefono_Persona" required>
-                                </div>
+                                    <div class="form-group datos-cuenta">
+                                        <label>Email</label>
+                                        <input class="form-control" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" >
+                                    </div>
+
+
+
 
                                 <div class="form-group">
                                     <label>Rol</label>
@@ -122,12 +118,14 @@
                                 </div>
                                 <!-- /.form-group -->
                             </div>
+                            <!-- /.col ====================================================================-->
+                            <!-- /.col ============COLUMNA DERECHA====================================-->
                             <!-- /.col -->
                             <div class="col-md-6">
 
                                 <div class="form-group">
                                     <label>Documento</label>
-                                    <input class="form-control" type="number" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
+                                    <input class="form-control" type="text" placeholder="Ingrese su Documento" id="Documento_Persona" name="Documento_Persona" maxlength="35" required>
 
                                 </div>
                                 <div class="form-group">
@@ -135,18 +133,18 @@
                                     <input class="form-control" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona" maxlength="45" required>
                                 </div>
 
-
-
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
-                                </div>
-
-
                                 <div class="form-group">
                                     <label>Direccion</label>
                                     <input class="form-control" type="text" placeholder="Ingrese su Direccion" id="Direccion_Persona" name="Direccion_Persona" required>
                                 </div>
+
+                                <div class="form-group datos-cuenta">
+                                    <label>Contraseña</label>
+                                    <input class="form-control" type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" >
+                                </div>
+
+
+
 
 
                                 <!-- /.form-group -->

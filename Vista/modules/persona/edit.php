@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../../../vendor/almasaeed2010/adminlte/bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../../vendor/almasaeed2010/adminlte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../build/css/main.css">
+
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
 
@@ -67,16 +69,7 @@
 
             <!-- Default box -->
             <div class="box">
-                <div class="box-header with-border">
-
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                            <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                            <i class="fa fa-times"></i></button>
-                    </div>
-                </div>
+                
 
                 <?php
                 if (!empty($_GET["id"]) && isset($_GET["id"])) { ?>
@@ -110,14 +103,16 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label>Telefono Persona</label>
+                                    <input class="form-control" value="<?php echo $persona_data->getTelefonoPersona()?>" type="text" placeholder="Ingrese su Email" id="Telefono_Persona" name="Telefono_Persona" required>
+                                </div>
+
+                                <div class="form-group datos-cuenta ">
                                     <label>Email</label>
                                     <input class="form-control" value="<?php echo $persona_data->getEmailPersona()?>" type="email" placeholder="Ingrese su Email" id="Email_persona" name="Email_persona" required>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Telefono Persona</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getTelefonoPersona()?>" type="number" placeholder="Ingrese su Email" id="Telefono_Persona" name="Telefono_Persona" required>
-                                </div>
+
 
                                 <div class="form-group">
                                     <label>Rol</label>
@@ -141,17 +136,17 @@
                                     <label>Apellido</label>
                                     <input class="form-control" value="<?php echo $persona_data->getApellidosPersona()?>" type="text" placeholder="Ingrese su Apellido" id="Apellidos_persona" name="Apellidos_persona"  required>
                                 </div>
-
-
-                                <div class="form-group">
-                                    <label>Contraseña</label>
-                                    <input class="form-control" value="<?php echo $persona_data->getContraseña()?>"  type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
-                                </div>
-
                                 <div class="form-group">
                                     <label>Direccion</label>
                                     <input class="form-control" value="<?php echo $persona_data->getDireccionPersona()?>"  type="text" placeholder="Ingrese su direccion" id="Direccion_Persona" name="Direccion_Persona" required>
                                 </div>
+
+                                <div class="form-group datos-cuenta ">
+                                    <label>Contraseña</label>
+                                    <input class="form-control" value="<?php echo $persona_data->getContraseña()?>"  type="password" placeholder="Ingrese su Contraseña" id="Contraseña" name="Contraseña" required>
+                                </div>
+
+
 
 
 
@@ -202,6 +197,10 @@
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
+
+<script src="../../../Vista/build/js/main.js"></script>
+
+
     <!-- AdminLTE for demo purposes -->
 </body>
 </html>

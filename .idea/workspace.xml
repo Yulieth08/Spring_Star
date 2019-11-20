@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="" />
+    <list default="true" id="ce810c17-45ee-4b46-aeae-c0802a0c4d9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/PersonaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/PersonaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/ProductoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProductoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controlador/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controlador/ProveedorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Persona.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Persona.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/marca/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/marca/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/login2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/persona/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/persona/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/producto/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/producto/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vista/modules/proveedor/view.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,55 +66,6 @@
         <item name="laragon" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="factura_compra: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="factura_venta: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="marca: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="persona: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="producto: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="producto_vendido: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="laragon" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="spring_star: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="productos_comprados: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -138,7 +115,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Vista/modules/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EjemploMVCVeterinaria" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -215,7 +192,10 @@
       <workItem from="1574007088907" duration="825000" />
       <workItem from="1574041820950" duration="727000" />
       <workItem from="1574085138382" duration="15688000" />
-      <workItem from="1574180462610" duration="244000" />
+      <workItem from="1574180462610" duration="1072000" />
+      <workItem from="1574253598003" duration="6201000" />
+      <workItem from="1574262455037" duration="3746000" />
+      <workItem from="1574268216368" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="casfcadasffas">
       <created>1571313446646</created>
@@ -329,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574180519148</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="cata">
+      <created>1574180732038</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574180732038</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

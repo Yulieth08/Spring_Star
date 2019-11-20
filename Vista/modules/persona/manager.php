@@ -71,13 +71,7 @@
 
             <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
-                <div class="box-header with-border">
-
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
-                    </div>
-                </div>
+               
                 <!-- /.box-header -->
                 <div class="box-body">
                     <table id="tabla1" class="table table-bordered table-striped dataTables_scrollBody form-inline">
@@ -87,11 +81,13 @@
                             <th>Apellido</th>
                             <th>Tipo Documento</th>
                             <th>Documento</th>
-                            <th>Email</th>
-                            <th>Contraseña</th>
-                            <th>Rol</th>
                             <th>Telefono</th>
                             <th>Direccion</th>
+                            <th>Rol</th>
+
+                            <th>Email</th>
+                            <th>Contraseña</th>
+
                             <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
@@ -107,12 +103,12 @@
                                 <td><?php echo $persona->getApellidosPersona();?></td>
                                 <td><?php echo $persona->getTipoDocumento();?></td>
                                 <td><?php echo $persona->getDocumentoPersona();?></td>
-                                <td><?php echo $persona->getEmailPersona();?></td>
-                                <td><?php echo $persona->getContraseña();?></td>
-                                <td><?php echo $persona->getRol();?></td>
                                 <td><?php echo $persona->getTelefonoPersona();?></td>
                                 <td><?php echo $persona->getDireccionPersona();?></td>
-
+                                <td><?php echo $persona->getRol();?></td>
+                                <td><?php echo $persona->getEmailPersona();?></td>
+                                <td><?php echo $persona->getContraseña();?></td>
+                                                           
                                 <td><?php echo $persona->getEstado();?></td>
                                 <td>
                                     <a href="edit.php?id=<?php echo $persona->getIdPersona(); ?>" type="button" data-toggle="tooltip" title="Actualizar" class="btn docs-tooltip btn-primary btn-xs"><i class="fa fa-edit"></i></a>

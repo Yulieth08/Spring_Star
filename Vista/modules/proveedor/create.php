@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="../../../vendor/almasaeed2010/adminlte/dist/css/skins/_all-skins.min.css">
 
+    <link rel="stylesheet" href="../../build/css/main.css"
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,16 +68,10 @@
 
             <!-- Default box -->
             <div class="box">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Proveedor</h3>
+             
 
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                            <i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                            <i class="fa fa-times"></i></button>
-                    </div>
+                <div id="prove_validado">
+
                 </div>
 
                 <form method="post" action="../../../Controlador/ProveedorController.php?action=crear">
@@ -152,6 +147,8 @@
     <script src="../../../vendor/almasaeed2010/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../../../vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
+    <script src="../../../Vista/build/js/main.js"></script>
+
     <!-- AdminLTE for demo purposes -->
 </body>
 </html>

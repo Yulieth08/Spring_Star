@@ -32,6 +32,8 @@ class ProductoController
             ProductoController::InactivarProducto();
         }else if($action =="NumeroFactura"){
             ProductoController::obtenerNumero();
+        }else if ($action == "ValidarProducto") {
+            ProductoController::ValidarProducto();
         }
     }
 
@@ -127,6 +129,18 @@ class ProductoController
             $nfactura.=$ultimoId;
         }
         return $nfactura;
+    }
+
+
+    static public function ValidarProducto (){
+        $doc=$_POST['referencia'];
+        $ObjProducto = Producto::buscar("SELECT * FROM producto WHERE Codigo_producto='$doc'");
+        if($ObjProducto==null){
+            echo 'Disponible';
+        }else{
+            echo 'No disponible';
+        }
+
     }
 
 }
