@@ -81,6 +81,9 @@
 
 
                     <div class="box-body">
+                        <div id="nit_validado">
+
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
 
@@ -109,7 +112,7 @@
 
                                 <div class="form-group">
                                     <label>Fecha Compra</label>
-                                    <input class="form-control" type="date" placeholder="Ingrese su Nit" id="Fecha_compra" name="Fecha_compra">
+                                    <input class="form-control" type="date" placeholder="Ingrese su Nit" id="Fecha_compra" name="Fecha_compra" required>
                                 </div>
 
                                 <div class="form-group">
@@ -135,7 +138,7 @@
                         <!-- /.row -->
                     </div>
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-success pull-right">Crear Factura</button>
+                            <button type="submit" class="btn btn-success pull-right" id="crearFactura" disabled onclick="registrarFacturaCompra()">Crear Factura</button>
                         </div>
 
                 <br>
@@ -145,42 +148,57 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Codigo producto</label>
-                                    <input class="form-control">
+                                    <input class="form-control" id="codigo_producto" name="codigo_producto" placeholder="Codigo Producto">
 
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Cantidad</label>
-                                    <input class="form-control">
+                                    <input class="form-control" id="cantidad_producto" name="cantidad_producto" placeholder="Cantidad Producto">
 
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Precio Unidad</label>
-                                    <input class="form-control">
+                                    <input class="form-control" id="precio_producto" name="precio_producto" placeholder="Precio Producto">
 
                                 </div>
                             </div>
                             <div class="col-md-1">
                                 <div class="form-group">
                                     <label>Talla</label>
-                                    <input class="form-control">
+                                    <select class="form-control" id="talla" name="talla">
+                                        <?php
+                                        for ($i = 30; $i <= 45; $i++){
+
+                                            echo '<option value="value1">'.$i.'</option>';
+                                    }
+                                        ?>
+                                    </select>
+
 
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Color</label>
-                                    <input class="form-control">
+                                    <select class="form-control" id="color" name="color">
+                                        <option value="negro">Rojo</option>
+                                        <option value="azul">Rojo</option>
+                                        <option value="cafe">Rojo</option>
+                                        <option value="gris">Rojo</option>
+                                        <option value="rojo">Rojo</option>
+                                        <option value="verde">Rojo</option>
+                                    </select>
 
                                 </div>
                             </div>
                             <div class="col-md-1">
                                 <div class="form-group">
                                     <label></label>
-                                    <button type="submit" class="btn btn-success">Agregar Producto</button>
+                                    <button type="submit" class="btn btn-success" disabled>Agregar Producto</button>
 
                                 </div>
                             </div>

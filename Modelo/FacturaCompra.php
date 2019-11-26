@@ -3,12 +3,13 @@
 require_once('Conexion.php');
 require_once ("Producto.php");
 require_once ("Persona.php");
-
+require_once ("Proveedor.php");
 
 class FacturaCompra  extends Conexion
 {
 
     private $Id_factura_compra;
+    private $N_Factura_Compra;
     private $Fecha_compra;
     private $Id_Proveedor;
     private $Id_persona;
@@ -20,13 +21,20 @@ class FacturaCompra  extends Conexion
         if (count($FacturaCompra) > 1) {
             foreach ($FacturaCompra as $campo => $valor) {
                 $this->$campo = $valor;
-                if($campo == 'Id_Proveedor' && $campo == 'Id_persona'){
-                    $this->Id_Proveedor = Proveedor::buscarForId($valor);
+                if($campo == 'Id_Proveedor'){
+                    $arrProveedor = Proveedor::buscar("SELECT * FROM proveedor WHERE Nit_Proveedor='$valor'");
+                    foreach ($arrProveedor as $Proveedor){
+                        $this->Id_Proveedor=$Proveedor;
+                    }
+
+                }
+                if( $campo == 'Id_persona'){
                     $this->Id_persona = Persona::buscarForId($valor);
                 }
             }
         } else {
             $this-> Id_factura_compra= "";
+            $this->N_Factura_Compra="";
             $this-> Fecha_compra = "";
             $this-> Id_Proveedor = new Proveedor();
             $this-> Id_persona = new Persona() ;
@@ -34,6 +42,24 @@ class FacturaCompra  extends Conexion
 
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getNFacturaCompra()
+    {
+        return $this->N_Factura_Compra;
+    }
+
+    /**
+     * @param string $N_Factura_Compra
+     */
+    public function setNFacturaCompra($N_Factura_Compra)
+    {
+        $this->N_Factura_Compra = $N_Factura_Compra;
+    }
+
+
 
     /**
      * @return string
@@ -111,6 +137,7 @@ class FacturaCompra  extends Conexion
         if ($id > 0) {
             $getrow = $FacturaCompra->getRow("SELECT * FROM factura_compra WHERE Id_factura_compra =?", array($id));;
             $FacturaCompra->Id_factura_compra = $getrow['Id_factura_compra'];
+            $FacturaCompra->N_Factura_Compra=$getrow['N_Factura_Compra'];
             $FacturaCompra->Fecha_compra = $getrow['Fecha_compra'];
             $FacturaCompra->Id_Proveedor = Proveedor::buscarForId($getrow['Id_Proveedor']);
             $FacturaCompra->Id_persona = Persona::buscarForId($getrow['Id_persona']);
@@ -129,6 +156,7 @@ class FacturaCompra  extends Conexion
         foreach ($getrows as $valor){
             $FacturaCompra = new FacturaCompra();
             $FacturaCompra-> Id_factura_compra= $valor['Id_factura_compra'];
+            $FacturaCompra->N_Factura_Compra=$valor['N_Factura_Compra'];
             $FacturaCompra-> Fecha_compra= $valor['Fecha_compra'];
             $FacturaCompra->Id_Proveedor = Proveedor::buscarForId($valor['Id_Proveedor']);
             $FacturaCompra->Id_persona = Persona::buscarForId($valor['Id_persona']);
@@ -149,10 +177,11 @@ class FacturaCompra  extends Conexion
 
     public function insertar()
     {
-        $result = $this->insertRow("INSERT INTO factura_compra VALUES (NULL, ?, ?, ?)", array(
+        $result = $this->insertRow("INSERT INTO factura_compra VALUES (NULL, ?, ?, ?,?)", array(
+                $this->N_Factura_Compra,
                 $this->Fecha_compra,
-                 $this->Id_Proveedor->getIdProveedor(),
-                 $this->Id_persona->getIdPersona(),
+                $this->Id_Proveedor->getIdProveedor(),
+                $this->Id_persona->getIdPersona(),
             )
         );
         $this->Disconnect();
@@ -174,6 +203,8 @@ class FacturaCompra  extends Conexion
     {
         // TODO: Implement eliminar() method.
     }
+
+
 
 
 

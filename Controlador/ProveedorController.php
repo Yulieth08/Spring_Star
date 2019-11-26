@@ -30,6 +30,8 @@ class ProveedorController
             ProveedorController::InactivarProveedor();
         }else if ($action == "ValidarNit") {
             ProveedorController::ValidarNit();
+        }else if ($action == "validarProveedor") {
+            ProveedorController::validarProveedor();
         }
     }
 
@@ -124,6 +126,21 @@ class ProveedorController
         }else{
             echo 'No disponible';
         }
+    }
+    static public function validarProveedor(){
+        $doc=$_POST['Nit'];
+        $info="";
+        if($doc!=""){
+            $ObjProveedor = Proveedor::buscar("SELECT * FROM proveedor WHERE Nit_Proveedor='$doc'");
+            if($ObjProveedor!=""){
+                foreach ($ObjProveedor as $Proveedor) {
+
+                    $info=$Proveedor->getNombreProveedor().','.$Proveedor->getTelefonoProveedor();
+                }
+            }
+        }
+        echo $info;
+
     }
 }
 

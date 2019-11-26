@@ -133,9 +133,9 @@ class ProductoController
 
 
     static public function ValidarProducto (){
-        $doc=$_POST['referencia'];
-        $ObjProducto = Producto::buscar("SELECT * FROM producto WHERE Codigo_producto='$doc'");
-        if($ObjProducto==null){
+        $cod=$_POST['Codigo'];
+        $ObjProducto = Producto::buscar("SELECT * FROM producto WHERE Codigo_producto='$cod'");
+        if($ObjProducto==""){
             echo 'Disponible';
         }else{
             echo 'No disponible';
