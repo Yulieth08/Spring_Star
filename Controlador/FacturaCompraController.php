@@ -49,11 +49,9 @@ class FacturaCompraController
             $arrFacturaCompra['Id_Proveedor'] =$_POST['Nit_Proveedor'];
             $arrFacturaCompra['Id_persona'] =$_POST['Id_persona'];
             $FacturaCompra = new FacturaCompra($arrFacturaCompra);
-            if ($FacturaCompra->insertar()){
-                echo "Bien";
-            }else{
-                echo "Error al insertar";
-            }
+            $idFacturaCom=$FacturaCompra->insertar();
+            echo $idFacturaCom;
+
         } catch (Exception $e) {
             var_dump($e);
 

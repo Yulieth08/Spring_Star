@@ -79,6 +79,7 @@
                             <th>Marca</th>
                             <th>Referencia </th>
                             <th>Tipo Producto</th>
+                            <th>Nombre Producto</th>
                             <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
@@ -93,6 +94,7 @@
                                 <td><?php echo $Producto->getIdMarca()->getNombreMarca();?></td>
                                 <td><?php echo $Producto->getCodigoProducto(); ?></td>
                                 <td><?php echo $Producto->getTipoProducto();?></td>
+                                <td><?php echo $Producto->getNombreProducto();?></td>
                                 <td><?php echo $Producto->getEstado();?></td>
                                 <td>
                                     <a href="edit.php?id=<?php echo $Producto->getIdProducto(); ?>" type="button" data-toggle="tooltip" title="Actualizar" class="btn docs-tooltip btn-primary btn-xs"><i class="fa fa-edit"></i></a>

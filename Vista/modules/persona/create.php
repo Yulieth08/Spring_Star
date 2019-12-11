@@ -110,6 +110,7 @@
                                 <div class="form-group">
                                     <label>Rol</label>
                                     <select class="form-control" name="Rol" id="Rol" required>
+                                        <option selected disabled>Seleccionar...</option>
                                         <option value="Administrador">Administrador</option>
                                         <option value="Vendedor">Vendedor</option>
                                         <option value="Cliente">Cliente</option>

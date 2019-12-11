@@ -3,13 +3,14 @@
 require_once('Conexion.php');
 require_once ("Producto.php");
 require_once ("Persona.php");
+require_once ("FacturaCompra.php");
 
 
-class Productos_Comprados  extends Conexion
+class ProductosComprados  extends Conexion
 {
 
     private $Id_Productos_Comprados;
-    private $Cantidad_Incial;
+    private $Cantidad_Inicial;
     private $Cantidad_productos;
     private $Precio_compra;
     private $Precio_venta;
@@ -25,14 +26,17 @@ class Productos_Comprados  extends Conexion
         if (count($Productos_Comprados) > 1) {
             foreach ($Productos_Comprados as $campo => $valor) {
                 $this->$campo = $valor;
-                if($campo == 'Id_factura_compra' && $campo == 'Id_producto'){
-                    $this->Id_factura_compra = FacturaCompra::buscarForId($valor);
-                    $this->Id_producto = Producto::buscarForId($valor);
+                if( $campo == 'Id_producto'){
+                    $arrproducto=Producto::buscar("SELECT * FROM producto WHERE Codigo_producto='$valor'");
+                    foreach ($arrproducto as $Producto){
+                        $this->Id_producto = $Producto;
+                    }
+
                 }
             }
         } else {
             $this->Id_Productos_Comprados = "";
-            $this->Cantidad_Incial = "";
+            $this->Cantidad_Inicial = "";
             $this->Cantidad_productos = "";
             $this->Precio_compra  = "";
             $this->Precio_venta  = "";
@@ -64,17 +68,17 @@ class Productos_Comprados  extends Conexion
     /**
      * @return string
      */
-    public function getCantidadIncial()
+    public function getCantidadInicial()
     {
-        return $this->Cantidad_Incial;
+        return $this->Cantidad_Inicial;
     }
 
     /**
      * @param string $Cantidad_Incial
      */
-    public function setCantidadIncial($Cantidad_Incial)
+    public function setCantidadInicial($Cantidad_Inicial)
     {
-        $this->Cantidad_Incial = $Cantidad_Incial;
+        $this->Cantidad_Inicial = $Cantidad_Inicial;
     }
 
     /**
@@ -198,7 +202,7 @@ class Productos_Comprados  extends Conexion
         if ($id > 0) {
             $getrow = $Productos_Comprados->getRow("SELECT * FROM productos_comprados WHERE Id_Productos_Comprados =?", array($id));;
             $Productos_Comprados->Id_Productos_Comprados = $getrow['Id_Productos_Comprados'];
-            $Productos_Comprados-> Cantidad_Incial= $getrow['Cantidad_Incial'];
+            $Productos_Comprados-> Cantidad_Inicial= $getrow['Cantidad_Inicial'];
             $Productos_Comprados->Cantidad_productos = $getrow['Cantidad_productos'];
             $Productos_Comprados->Precio_compra = $getrow['Precio_compra'];
             $Productos_Comprados->Precio_venta = $getrow['Precio_venta'];
@@ -215,23 +219,23 @@ class Productos_Comprados  extends Conexion
 
     public static function buscar($query){
         $arrProductosComprados = array();
-        $tmp = new  Productos_Comprados();
+        $tmp = new  ProductosComprados();
         $getrows = $tmp->getRows($query);
 
         foreach ($getrows as $valor){
-            $Productos_Comprados = new Productos_Comprados();
-            $Productos_Comprados-> Id_Productos_Comprados= $valor['Id_Productos_Comprados'];
-            $Productos_Comprados-> Cantidad_Incial= $valor['Cantidad_Incial'];
-            $Productos_Comprados-> Cantidad_productos= $valor['Cantidad_productos'];
-            $Productos_Comprados-> Precio_compra= $valor['Precio_compra'];
-            $Productos_Comprados-> Precio_venta= $valor['Precio_venta'];
-            $Productos_Comprados-> Color= $valor['Color'];
-            $Productos_Comprados-> Talla= $valor['Talla'];
-            $Productos_Comprados->Id_factura_compra = FacturaCompra::buscarForId($valor['Id_factura_compra']);
-            $Productos_Comprados->Id_producto = Producto::buscarForId($valor['Id_producto']);
+            $ProductosComprados = new ProductosComprados();
+            $ProductosComprados-> Id_Productos_Comprados= $valor['Id_Productos_Comprados'];
+            $ProductosComprados-> Cantidad_Inicial= $valor['Cantidad_Inicial'];
+            $ProductosComprados-> Cantidad_productos= $valor['Cantidad_productos'];
+            $ProductosComprados-> Precio_compra= $valor['Precio_compra'];
+            $ProductosComprados-> Precio_venta= $valor['Precio_venta'];
+            $ProductosComprados-> Color= $valor['Color'];
+            $ProductosComprados-> Talla= $valor['Talla'];
+            $ProductosComprados->Id_factura_compra = FacturaCompra::buscarForId($valor['Id_factura_compra']);
+            $ProductosComprados->Id_producto = Producto::buscarForId($valor['Id_producto']);
 
-            $Productos_Comprados->Disconnect();
-            array_push($arrProductosComprados, $Productos_Comprados);
+            $ProductosComprados->Disconnect();
+            array_push($arrProductosComprados, $ProductosComprados);
         }
         $tmp->Disconnect();
         return $arrProductosComprados;
@@ -247,13 +251,13 @@ class Productos_Comprados  extends Conexion
     public function insertar()
     {
         $result = $this->insertRow("INSERT INTO productos_comprados VALUES (NULL, ?, ?, ?,?,?,?,?,?)", array(
-                $this->Cantidad_Incial,
+                $this->Cantidad_Inicial,
                 $this->Cantidad_productos,
                 $this->Precio_compra,
                 $this->Precio_venta,
                 $this->Color,
                 $this->Talla,
-                $this->Id_factura_compra->getFechaCompra(),
+                $this->Id_factura_compra,
                 $this->Id_producto->getIdProducto(),
             )
         );
@@ -263,8 +267,8 @@ class Productos_Comprados  extends Conexion
 
     public function editar()
     {
-        $this->updateRow("UPDATE productos_comprados SET  Cantidad_Incial= ?, Cantidad_productos = ?, Precio_compra = ?,Precio_venta=? ,Color=?, Talla=?,Id_factura_compra=?,Id_producto=? WHERE Id_Productos_Comprados= ?", array(
-            $this->Cantidad_Incial,
+        $this->updateRow("UPDATE productos_comprados SET  Cantidad_Inicial= ?, Cantidad_productos = ?, Precio_compra = ?,Precio_venta=? ,Color=?, Talla=?,Id_factura_compra=?,Id_producto=? WHERE Id_Productos_Comprados= ?", array(
+            $this->Cantidad_Inicial,
             $this->Cantidad_productos,
             $this->Precio_compra,
             $this->Precio_venta,

@@ -102,7 +102,8 @@
                             <div class="col-md-6">
 
 
-                                <div class="form-group">
+
+                            <div class="form-group">
                                     <label>Tipo Producto</label>
 
                                     <select class="form-control" name="Tipo_producto" id="Tipo_producto" required>
@@ -111,6 +112,12 @@
                                         <option value="Billeteras">Billeteras</option>
                                     </select>
 
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Nombre Producto</label>
+                                    <input class="form-control" type="text" placeholder="Ingrese Nombre producto" id="Nombre_Producto" name="Nombre_Producto"  required>
                                 </div>
 
                             </div>

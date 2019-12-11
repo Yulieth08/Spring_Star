@@ -10,6 +10,7 @@ class Producto extends Conexion
     private $Id_producto;
     private $Codigo_producto;
     private $Tipo_producto;
+    private $Nombre_Producto;
     private $Estado;
     private $Id_Marca;
 
@@ -28,11 +29,30 @@ class Producto extends Conexion
             $this-> Id_producto = "";
             $this-> Codigo_producto = "";
             $this-> Tipo_producto= "";
+            $this->Nombre_Producto="";
             $this->Estado = "";
             $this->Id_Marca = new Marca();
 
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getNombreProducto()
+    {
+        return $this->Nombre_Producto;
+    }
+
+    /**
+     * @param string $Nombre_Producto
+     */
+    public function setNombreProducto($Nombre_Producto)
+    {
+        $this->Nombre_Producto = $Nombre_Producto;
+    }
+
+
 
     /**
      * @return string
@@ -129,6 +149,7 @@ class Producto extends Conexion
             $Producto->Id_producto = $getrow['Id_producto'];
             $Producto-> Codigo_producto= $getrow['Codigo_producto'];
             $Producto->Tipo_producto = $getrow['Tipo_producto'];
+            $Producto->Nombre_Producto = $getrow['Nombre_Producto'];
             $Producto->Estado = $getrow['Estado'];
             $Producto->Id_Marca = Marca::buscarForId($getrow['Id_Marca']);
 
@@ -148,6 +169,7 @@ class Producto extends Conexion
             $Producto-> Id_producto= $valor['Id_producto'];
             $Producto-> Codigo_producto= $valor['Codigo_producto'];
             $Producto-> Tipo_producto= $valor['Tipo_producto'];
+            $Producto-> Nombre_Producto= $valor['Nombre_Producto'];
             $Producto->Estado = $valor['Estado'];
             $Producto->Id_Marca = Marca::buscarForId($valor['Id_Marca']);
 
@@ -167,9 +189,10 @@ class Producto extends Conexion
 
     public function insertar()
     {
-        $result = $this->insertRow("INSERT INTO producto VALUES (NULL, ?, ?, ?, ?)", array(
+        $result = $this->insertRow("INSERT INTO producto VALUES (NULL, ?, ?, ?, ?, ?)", array(
                 $this->Codigo_producto,
                 $this->Tipo_producto,
+                $this->Nombre_Producto,
                 $this->Estado,
                 $this->Id_Marca->getIdMarca(),
             )
@@ -180,9 +203,10 @@ class Producto extends Conexion
 
     public function editar()
     {
-        $this->updateRow("UPDATE producto SET  Codigo_producto= ?, Tipo_producto = ?, Estado = ?, Id_Marca = ? WHERE Id_producto = ?", array(
+        $this->updateRow("UPDATE producto SET  Codigo_producto= ?, Tipo_producto = ?,Nombre_Producto=?, Estado = ?, Id_Marca = ? WHERE Id_producto = ?", array(
             $this->Codigo_producto,
             $this->Tipo_producto,
+            $this->Nombre_Producto,
             $this->Estado,
             $this->Id_Marca->getIdMarca(),
             $this->Id_producto

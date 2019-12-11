@@ -69,8 +69,7 @@ class Marcacontroller
             $arrayMarca = array();
             $arrayMarca['Nombre_Marca'] = $_POST['Nombre_Marca'];
             $arrayMarca['Id_Marca'] = $_POST['Id_Marca'];
-            $arrayMarca['Estado'] = "Activo";
-
+            $arrayMarca['Estado'] = $_POST['Estado'];
             $Marca = new Marca ($arrayMarca);
             $Marca->editar();
             header("Location: ../Vista/modules/marca/view.php?id=".$Marca->getIdMarca()."");

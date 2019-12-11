@@ -177,15 +177,16 @@ class FacturaCompra  extends Conexion
 
     public function insertar()
     {
-        $result = $this->insertRow("INSERT INTO factura_compra VALUES (NULL, ?, ?, ?,?)", array(
+        $this->insertRow("INSERT INTO factura_compra VALUES (NULL, ?, ?, ?,?)", array(
                 $this->N_Factura_Compra,
                 $this->Fecha_compra,
                 $this->Id_Proveedor->getIdProveedor(),
                 $this->Id_persona->getIdPersona(),
             )
         );
+        $id=$this->getLastId();
         $this->Disconnect();
-        return $result;
+        return $id;
     }
 
     public function editar()

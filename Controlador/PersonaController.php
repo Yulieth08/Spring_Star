@@ -124,6 +124,7 @@ class PersonaController
             $arrayPersona = Persona::getAll();
         }
         $htmlSelect = "<select ".(($isMultiple) ? "multiple" : "")." ".(($isRequired) ? "required" : "")." id= '".$id."' name='".$nombre."' class='".$class."'>";
+        $htmlSelect.="<option selected disabled>Seleccionar</option>";
         if(count($arrayPersona) > 0){
             foreach ($arrayPersona as $Persona){
                 if (!PersonaController::personaIsArray($Persona->getIdPersona(),$arrExcluir))
@@ -156,14 +157,23 @@ class PersonaController
             //header("Location: ../Vista/modules/persona/manager.php?respuesta=error");
         }
     }
+
     static public function ValidarDocumento (){
+        $datos="";
         $doc=$_POST['documento'];
         $ObjPersona = Persona::buscar("SELECT * FROM persona WHERE Documento_Persona='$doc'");
-        if($ObjPersona==null){
-            echo 'Disponible';
-        }else{
-            echo 'No disponible';
+        $datos="";
+        if($ObjPersona!=null){
+
+            foreach ($ObjPersona as $Persona){
+                $nombre=$Persona->getNombrePersona();
+                $telefono=$Persona->getTelefonoPersona();
+                $direccion=$Persona->getDireccionPersona();
+                $datos=$nombre.','.$telefono.','.$direccion;
+            }
         }
+
+        echo $datos;
 
     }
 

@@ -120,6 +120,14 @@
                                         </select>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label>Nombre Producto</label>
+
+                                        <input class="form-control"  value="<?php echo $Producto_data->getNombreProducto()?>" type="text" placeholder="Ingrese Nombre producto" id="Nombre_Producto" name="Nombre_Producto"  >
+                                    </div>
+
+
+
                                     <!-- /.form-group -->
                                 </div>
                                 <!-- /.col -->

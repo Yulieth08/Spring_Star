@@ -83,10 +83,17 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
+
                                         <label>Nombre Marca</label>
                                         <input id="Id_Marca" value="<?php echo $DataMarca->getIdMarca(); ?>"
                                                name="Id_Marca" hidden required type="text">
+                                    </div>
 
+                                    <div class="form-group">
+                                            <label>Estado</label>
+                                            <input type="hidden" class="form-control" type="text" id="Estado" name="Estado" value="<?= $DataMarca->getEstado();   ?>" maxlength="45" required>
+                                    </div>
+                                    <div class="form-group">
                                         <input class="form-control" value="<?php echo $DataMarca->getNombreMarca() ;?>"
                                                type="text" placeholder="Ingrese la Marca" id="Nombre_Marca" name="Nombre_Marca"
                                                required>

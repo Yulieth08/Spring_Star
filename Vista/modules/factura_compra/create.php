@@ -144,77 +144,89 @@
                 <br>
                 <div class="productos">
                     <div class="box-body">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <label>Codigo producto</label>
-                                    <input class="form-control" id="codigo_producto" name="codigo_producto" placeholder="Codigo Producto">
 
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Codigo Producto</label>
+                                        <input class="form-control" id="codigo_producto" name="codigo_producto" placeholder="Codigo Producto" required>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label>Cantidad</label>
-                                    <input class="form-control" id="cantidad_producto" name="cantidad_producto" placeholder="Cantidad Producto">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Nombre Producto</label>
+                                        <input class="form-control" id="nom_producto" name="nom_producto" placeholder="Nombre Producto" required>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label>Precio Unidad</label>
-                                    <input class="form-control" id="precio_producto" name="precio_producto" placeholder="Precio Producto">
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <label>Cantidad</label>
+                                        <input class="form-control" id="cantidad_producto" name="cantidad_producto" placeholder="Cantidad Producto" required>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <label>Talla</label>
-                                    <select class="form-control" id="talla" name="talla">
-                                        <?php
-                                        for ($i = 30; $i <= 45; $i++){
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Precio Unidad</label>
+                                        <input class="form-control" id="precio_producto" name="precio_producto" placeholder="Precio Producto" required>
 
-                                            echo '<option value="value1">'.$i.'</option>';
-                                    }
-                                        ?>
-                                    </select>
-
-
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="form-group">
-                                    <label>Color</label>
-                                    <select class="form-control" id="color" name="color">
-                                        <option value="negro">Rojo</option>
-                                        <option value="azul">Rojo</option>
-                                        <option value="cafe">Rojo</option>
-                                        <option value="gris">Rojo</option>
-                                        <option value="rojo">Rojo</option>
-                                        <option value="verde">Rojo</option>
-                                    </select>
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <label>Talla</label>
+                                        <select class="form-control" id="talla" name="talla">
+                                            <option value="0">Ninguno</option>
+                                            <?php
+                                            for ($i = 30; $i <= 45; $i++){
 
+                                                echo '<option value="'.$i.'">'.$i.'</option>';
+                                            }
+                                            ?>
+                                        </select>
+
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-1">
-                                <div class="form-group">
-                                    <label></label>
-                                    <button type="submit" class="btn btn-success" disabled>Agregar Producto</button>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>Color</label>
+                                        <select class="form-control" id="color" name="color">
+                                            <option value="ninguno">Ninguno</option>
+                                            <option value="negro">Negro</option>
+                                            <option value="azul">Azul</option>
+                                            <option value="cafe">Cafe</option>
+                                            <option value="gris">Gris</option>
+                                            <option value="rojo">Rojo</option>
+                                            <option value="verde">Verde</option>
+                                        </select>
 
+                                    </div>
                                 </div>
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <label></label>
+                                        <button type="submit" class="btn btn-success" id="agregarProducto" disabled onclick="agregarProCom()">Agregar Producto</button>
+
+                                    </div>
+                                </div>
+
                             </div>
 
-                        </div>
+
 
                         <table id="tabla_productos" class="table table-striped">
                             <thead class="thead-darkt">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Codigo</th>
-                                <th scope="col">Nombre</th>
+                                <th scope="col">Talla</th>
+                                <th scope="col">Color</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio Unidad</th>
                                 <th scope="col">Precio Total</th>
-                                <th scope="col">Estado</th>
                                 <th scope="col">Accion</th>
 
                             </tr>
@@ -230,7 +242,7 @@
                 <div class="box-footer">
                     <div class="box-footer">
                         <button type="reset" class="btn btn-danger" disabled>Cancelar</button>
-                        <button type="submit" class="btn btn-success pull-right" disabled>Finalizar Compra</button>
+                        <button type="submit" class="btn btn-success pull-right" id="btn_compra" disabled onclick="recorrerTabla()" >Finalizar Compra</button>
                     </div>
                 </div>
 

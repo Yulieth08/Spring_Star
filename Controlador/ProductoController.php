@@ -45,6 +45,7 @@ class ProductoController
             $arrproducto['Codigo_producto'] = $_POST['Codigo_producto'];
             $arrproducto['Tipo_producto'] = $_POST['Tipo_producto'];
             $arrproducto['Id_Marca'] = $_POST['Id_Marca'];
+            $arrproducto['Nombre_Producto'] = $_POST['Nombre_Producto'];
             $arrproducto['Estado'] = 'Activo';
             $Producto = new producto($arrproducto);
             if ($Producto->insertar()){
@@ -75,6 +76,7 @@ class ProductoController
             $arrproducto = array();
             $arrproducto['Codigo_producto'] = $_POST['Codigo_producto'];
             $arrproducto['Tipo_producto'] = $_POST['Tipo_producto'];
+            $arrproducto['Nombre_Producto'] = $_POST['Nombre_Producto'];
             $arrproducto['Estado'] = "Activo";
             $arrproducto['Id_producto'] = $_POST['Id_producto'];
             $arrproducto['Id_Marca'] = $_POST['Id_Marca'];
@@ -135,11 +137,13 @@ class ProductoController
     static public function ValidarProducto (){
         $cod=$_POST['Codigo'];
         $ObjProducto = Producto::buscar("SELECT * FROM producto WHERE Codigo_producto='$cod'");
-        if($ObjProducto==""){
-            echo 'Disponible';
-        }else{
-            echo 'No disponible';
+        $datos="";
+        if($ObjProducto!=null){
+            foreach ($ObjProducto as $Producto){
+                $datos= $Producto->getNombreProducto().",".$Producto->getIdProducto();
+            }
         }
+        echo $datos;
 
     }
 

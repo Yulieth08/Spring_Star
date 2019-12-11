@@ -93,7 +93,10 @@
                             <td>Tipo Producto:
                             <td><?= $Producto_data->getTipoProducto();?></td>
                         </tr>
-
+                        <tr>
+                            <td>Nombre Producto:
+                            <td><?= $Producto_data->getNombreProducto();?></td>
+                        </tr>
                         <tr>
                             <td>Estado: </td>
                             <td><?= $Producto_data->getEstado(); ?></td>
